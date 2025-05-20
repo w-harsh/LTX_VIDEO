@@ -61,5 +61,26 @@
     "pip": [],
     "apt": [],
     "cached": "False"
+  },
+  {
+    "name": "ComfyUI-LTXVideo",
+    "url": "https://github.com/Lightricks/ComfyUI-LTXVideo",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "lightricks",
+      "title": "ComfyUI-LTXVideo",
+      "id": "comfyui-ltxvideo",
+      "reference": "https://github.com/Lightricks/ComfyUI-LTXVideo",
+      "files": [
+        "https://github.com/Lightricks/ComfyUI-LTXVideo"
+      ],
+      "install_type": "git-clone",
+      "description": "Custom nodes for LTX-Video support in ComfyUI"
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
   }
 ]
