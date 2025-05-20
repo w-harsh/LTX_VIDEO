@@ -39,5 +39,27 @@
     "pip": [],
     "apt": [],
     "cached": "False"
+  },
+  {
+    "name": "rgthree's ComfyUI Nodes",
+    "url": "https://github.com/rgthree/rgthree-comfy",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "rgthree",
+      "title": "rgthree's ComfyUI Nodes",
+      "id": "rgthree",
+      "reference": "https://github.com/rgthree/rgthree-comfy",
+      "files": [
+        "https://github.com/rgthree/rgthree-comfy"
+      ],
+      "nodename_pattern": " \\(rgthree\\)$",
+      "install_type": "git-clone",
+      "description": "Nodes: Seed, Reroute, Context, Lora Loader Stack, Context Switch, Fast Muter. These custom nodes helps organize the building of complex workflows."
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
   }
 ]
