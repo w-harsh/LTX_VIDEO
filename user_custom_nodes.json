@@ -19,5 +19,25 @@
     "pip": [],
     "apt": [],
     "cached": "False"
+  },
+  {
+    "name": "ComfyUI Easy Use",
+    "url": "https://github.com/yolain/ComfyUI-Easy-Use",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "yolain",
+      "title": "ComfyUI Easy Use",
+      "reference": "https://github.com/yolain/ComfyUI-Easy-Use",
+      "files": [
+        "https://github.com/yolain/ComfyUI-Easy-Use"
+      ],
+      "install_type": "git-clone",
+      "description": "To enhance the usability of ComfyUI, optimizations and integrations have been implemented for several commonly used nodes."
+    },
+    "nodes": [],
+    "pip": [],
+    "apt": [],
+    "cached": "False"
   }
 ]
