@@ -102,7 +102,7 @@
                 106
             ],
             "flags": {},
-            "order": 8,
+            "order": 9,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -173,7 +173,7 @@
                 326
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -472,7 +472,7 @@
                 82
             ],
             "flags": {},
-            "order": 6,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -554,7 +554,7 @@
                 82
             ],
             "flags": {},
-            "order": 4,
+            "order": 3,
             "mode": 2,
             "inputs": [],
             "outputs": [
@@ -867,7 +867,7 @@
                 106
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 2,
             "inputs": [],
             "outputs": [
@@ -946,7 +946,7 @@
                 88
             ],
             "flags": {},
-            "order": 1,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1080,7 +1080,7 @@
                 88
             ],
             "flags": {},
-            "order": 3,
+            "order": 6,
             "mode": 2,
             "inputs": [],
             "outputs": [
@@ -1360,7 +1360,7 @@
                 58
             ],
             "flags": {},
-            "order": 10,
+            "order": 7,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1430,7 +1430,7 @@
                 58
             ],
             "flags": {},
-            "order": 7,
+            "order": 8,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1842,10 +1842,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.6158635343511892,
+            "scale": 0.21585641170314085,
             "offset": [
-                49.98780402682991,
-                -1666.2613419585068
+                58.15544471539186,
+                -1189.5595983815736
             ]
         },
         "frontendVersion": "1.18.0",
@@ -1969,7 +1969,7 @@
                 },
                 "class_type": "VHS_VideoCombine",
                 "_meta": {
-                    "title": "Video Combine ð¥ð¥ðð¢"
+                    "title": "Video Combine Ã°ÂÂÂ¥Ã°ÂÂÂ¥Ã°ÂÂÂÃ°ÂÂÂ¢"
                 }
             },
             "1338": {
@@ -2013,7 +2013,7 @@
                 },
                 "class_type": "LTXVBaseSampler",
                 "_meta": {
-                    "title": "ðð£ð§ LTXV Base Sampler"
+                    "title": "Ã°ÂÂÂÃ°ÂÂÂ£Ã°ÂÂÂ§ LTXV Base Sampler"
                 }
             },
             "1507": {
@@ -2039,7 +2039,7 @@
                 },
                 "class_type": "LTXVAdainLatent",
                 "_meta": {
-                    "title": "ðð£ð§ LTXV Adain Latent"
+                    "title": "Ã°ÂÂÂÃ°ÂÂÂ£Ã°ÂÂÂ§ LTXV Adain Latent"
                 }
             },
             "1598": {
@@ -2069,7 +2069,7 @@
                 },
                 "class_type": "VHS_VideoCombine",
                 "_meta": {
-                    "title": "Video Combine ð¥ð¥ðð¢"
+                    "title": "Video Combine Ã°ÂÂÂ¥Ã°ÂÂÂ¥Ã°ÂÂÂÃ°ÂÂÂ¢"
                 }
             },
             "1601": {
@@ -2127,7 +2127,7 @@
                 },
                 "class_type": "LTXVLatentUpsampler",
                 "_meta": {
-                    "title": "ðð£ð§ LTXV Latent Upsampler"
+                    "title": "Ã°ÂÂÂÃ°ÂÂÂ£Ã°ÂÂÂ§ LTXV Latent Upsampler"
                 }
             },
             "1699": {
@@ -2141,7 +2141,7 @@
                 },
                 "class_type": "LTXVFilmGrain",
                 "_meta": {
-                    "title": "ðð£ð§ LTXV Film Grain"
+                    "title": "Ã°ÂÂÂÃ°ÂÂÂ£Ã°ÂÂÂ§ LTXV Film Grain"
                 }
             },
             "1813": {
@@ -2168,7 +2168,7 @@
                 },
                 "class_type": "STGGuiderAdvanced",
                 "_meta": {
-                    "title": "ðð£ð§ STG Guider Advanced"
+                    "title": "Ã°ÂÂÂÃ°ÂÂÂ£Ã°ÂÂÂ§ STG Guider Advanced"
                 }
             },
             "1828": {
@@ -2179,7 +2179,7 @@
                 },
                 "class_type": "LTXVLatentUpsamplerModelLoader",
                 "_meta": {
-                    "title": "ðð£ð§ LTXV Latent Upsampler Model Loader"
+                    "title": "Ã°ÂÂÂÃ°ÂÂÂ£Ã°ÂÂÂ§ LTXV Latent Upsampler Model Loader"
                 }
             },
             "1872": {
@@ -2194,7 +2194,7 @@
                 },
                 "class_type": "Set VAE Decoder Noise",
                 "_meta": {
-                    "title": "ðð£ð§ Set VAE Decoder Noise"
+                    "title": "Ã°ÂÂÂÃ°ÂÂÂ£Ã°ÂÂÂ§ Set VAE Decoder Noise"
                 }
             },
             "1875": {
@@ -2242,7 +2242,7 @@
                 },
                 "class_type": "STGGuiderAdvanced",
                 "_meta": {
-                    "title": "ðð£ð§ STG Guider Advanced"
+                    "title": "Ã°ÂÂÂÃ°ÂÂÂ£Ã°ÂÂÂ§ STG Guider Advanced"
                 }
             },
             "1888": {
@@ -2311,7 +2311,7 @@
                 },
                 "class_type": "LTXVTiledSampler",
                 "_meta": {
-                    "title": "ðð£ð§ LTXV Tiled Sampler"
+                    "title": "Ã°ÂÂÂÃ°ÂÂÂ£Ã°ÂÂÂ§ LTXV Tiled Sampler"
                 }
             }
         },
