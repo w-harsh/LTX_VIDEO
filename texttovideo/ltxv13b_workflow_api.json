@@ -27,7 +27,7 @@
     },
     "38": {
         "inputs": {
-            "clip_name": "t5xxl_fp8_e4m3fn_scaled.safetensors",
+            "clip_name": "t5xxl_fp8_e4m3fn.safetensors",
             "type": "ltxv",
             "device": "default"
         },
@@ -98,15 +98,7 @@
             "save_metadata": true,
             "trim_to_audio": false,
             "pingpong": false,
-            "save_output": true,
-            "images": [
-                "1896",
-                0
-            ],
-            "vae": [
-                "1907",
-                0
-            ]
+            "save_output": true
         },
         "class_type": "VHS_VideoCombine",
         "_meta": {
@@ -124,8 +116,8 @@
             "crf": 30,
             "blur": 1,
             "vae": [
-                "1907",
-                0
+                "1908",
+                2
             ],
             "guider": [
                 "1887",
@@ -168,8 +160,8 @@
             "scale": 0.025,
             "seed": 42,
             "vae": [
-                "1907",
-                0
+                "1908",
+                2
             ]
         },
         "class_type": "Set VAE Decoder Noise",
@@ -207,6 +199,10 @@
             "stg_scale_values": "0,0,0,0,0,0",
             "stg_rescale_values": "1, 1, 1, 1, 1, 1",
             "stg_layers_indices": "[25], [35], [35], [42], [42], [42]",
+            "model": [
+                "1908",
+                0
+            ],
             "positive": [
                 "1241",
                 0
@@ -233,13 +229,13 @@
             "title": "Clean VRAM Used"
         }
     },
-    "1907": {
+    "1908": {
         "inputs": {
-            "vae_name": "ltxv-13b-0.9.7-vae-BF16.safetensors"
+            "ckpt_name": "ltxv-13b-0.9.7-distilled.safetensors"
         },
-        "class_type": "VAELoader",
+        "class_type": "CheckpointLoaderSimple",
         "_meta": {
-            "title": "Load VAE"
+            "title": "Load Checkpoint"
         }
     }
 }
