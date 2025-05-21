@@ -123,10 +123,6 @@
             "crop": "center",
             "crf": 30,
             "blur": 1,
-            "model": [
-                "1906",
-                0
-            ],
             "vae": [
                 "1907",
                 0
@@ -211,10 +207,6 @@
             "stg_scale_values": "0,0,0,0,0,0",
             "stg_rescale_values": "1, 1, 1, 1, 1, 1",
             "stg_layers_indices": "[25], [35], [35], [42], [42], [42]",
-            "model": [
-                "1906",
-                0
-            ],
             "positive": [
                 "1241",
                 0
@@ -240,12 +232,6 @@
         "_meta": {
             "title": "Clean VRAM Used"
         }
-    },
-    "1906": {
-        "inputs": {
-            "UNKNOWN": "ltxv-13b-0.9.7-distilled-Q3_K_S.gguf"
-        },
-        "_meta": {}
     },
     "1907": {
         "inputs": {
