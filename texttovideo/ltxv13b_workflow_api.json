@@ -47,7 +47,7 @@
     },
     "1206": {
         "inputs": {
-            "image": "768x512px bunny.png"
+            "image": "768x512px_bunny.png"
         },
         "class_type": "LoadImage",
         "_meta": {
@@ -98,7 +98,11 @@
             "save_metadata": true,
             "trim_to_audio": false,
             "pingpong": false,
-            "save_output": true
+            "save_output": true,
+            "images": [
+                "1896",
+                0
+            ]
         },
         "class_type": "VHS_VideoCombine",
         "_meta": {
@@ -115,6 +119,10 @@
             "crop": "center",
             "crf": 30,
             "blur": 1,
+            "model": [
+                "1908",
+                0
+            ],
             "vae": [
                 "1908",
                 2
