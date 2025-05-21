@@ -6,9 +6,17 @@ models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
-workflows: []
+workflows:
+  - id: 8n3z9a40nl
+    name: ltxv13b_workflow_api.json
+    file: texttovideo/ltxv13b_workflow_api.json
+    version: 2
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: bxodk8s0jfo
     name: ltxv13b_workflow.json
     file: texttovideo/ltxv13b_workflow.json
-    version: 1
+    version: 2
