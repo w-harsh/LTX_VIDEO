@@ -10,7 +10,7 @@ workflows:
   - id: 8n3z9a40nl
     name: ltxv13b_workflow_api.json
     file: texttovideo/ltxv13b_workflow_api.json
-    version: 4
+    version: 5
     description: ''
     inputs: []
     outputs: []
@@ -19,4 +19,4 @@ normal_workflows:
   - id: bxodk8s0jfo
     name: ltxv13b_workflow.json
     file: texttovideo/ltxv13b_workflow.json
-    version: 4
+    version: 5
