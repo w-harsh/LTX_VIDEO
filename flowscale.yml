@@ -7,4 +7,9 @@ custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
 workflows: []
-normal_workflows: []
+normal_workflows:
+  - id: bxodk8s0jfo
+    name: ltxv_13b_0.9.7-gguf_i2v_landscape_768x512px_to_1536x1024px.json
+    file: >-
+      texttovideo/ltxv_13b_0.9.7-gguf_i2v_landscape_768x512px_to_1536x1024px.json
+    version: 0
