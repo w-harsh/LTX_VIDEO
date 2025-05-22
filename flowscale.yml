@@ -1,4 +1,4 @@
-version: 0
+version: 1
 builder_version: latest
 comfyui_version: ComfyUI-0.3.30
 flowscale_nodes_version: 875e4da14d7f66572ca67c6b778be9b1980a1bba
