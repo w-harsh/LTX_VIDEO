@@ -1,8 +1,8 @@
 {
     "id": "394ed254-7306-42a2-9ae6-aa880ce4456d",
     "revision": 0,
-    "last_node_id": 1908,
-    "last_link_id": 5461,
+    "last_node_id": 1911,
+    "last_link_id": 5465,
     "nodes": [
         {
             "id": 6,
@@ -16,13 +16,21 @@
                 204.2556610107422
             ],
             "flags": {},
-            "order": 10,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
                     "name": "clip",
                     "type": "CLIP",
                     "link": 74
+                },
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "text"
+                    },
+                    "link": 5464
                 }
             ],
             "outputs": [
@@ -59,7 +67,7 @@
                 213.2843780517578
             ],
             "flags": {},
-            "order": 11,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -162,48 +170,6 @@
             ]
         },
         {
-            "id": 1206,
-            "type": "LoadImage",
-            "pos": [
-                429.2665710449219,
-                2437.33251953125
-            ],
-            "size": [
-                383.26666259765625,
-                326
-            ],
-            "flags": {},
-            "order": 8,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [
-                {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
-                    "links": [
-                        5162,
-                        5424
-                    ]
-                },
-                {
-                    "name": "MASK",
-                    "type": "MASK",
-                    "links": null
-                }
-            ],
-            "properties": {
-                "cnr_id": "comfy-core",
-                "ver": "0.3.30",
-                "Node name for S&R": "LoadImage"
-            },
-            "widgets_values": [
-                "768x512px_bunny.png",
-                "image"
-            ],
-            "color": "#232",
-            "bgcolor": "#353"
-        },
-        {
             "id": 1241,
             "type": "LTXVConditioning",
             "pos": [
@@ -215,7 +181,7 @@
                 78
             ],
             "flags": {},
-            "order": 15,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
@@ -270,7 +236,7 @@
                 46
             ],
             "flags": {},
-            "order": 19,
+            "order": 21,
             "mode": 0,
             "inputs": [
                 {
@@ -312,7 +278,7 @@
                 334
             ],
             "flags": {},
-            "order": 23,
+            "order": 25,
             "mode": 0,
             "inputs": [
                 {
@@ -337,6 +303,14 @@
                     "shape": 7,
                     "type": "VAE",
                     "link": null
+                },
+                {
+                    "name": "filename_prefix",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "filename_prefix"
+                    },
+                    "link": 5465
                 }
             ],
             "outputs": [
@@ -390,7 +364,7 @@
                 346
             ],
             "flags": {},
-            "order": 18,
+            "order": 20,
             "mode": 0,
             "inputs": [
                 {
@@ -427,7 +401,7 @@
                     "name": "optional_cond_images",
                     "shape": 7,
                     "type": "IMAGE",
-                    "link": 5162
+                    "link": 5462
                 }
             ],
             "outputs": [
@@ -509,7 +483,7 @@
                 78
             ],
             "flags": {},
-            "order": 22,
+            "order": 24,
             "mode": 2,
             "inputs": [
                 {
@@ -588,7 +562,7 @@
                 334
             ],
             "flags": {},
-            "order": 29,
+            "order": 31,
             "mode": 2,
             "inputs": [
                 {
@@ -667,7 +641,7 @@
                 150
             ],
             "flags": {},
-            "order": 25,
+            "order": 27,
             "mode": 2,
             "inputs": [
                 {
@@ -716,7 +690,7 @@
                 66
             ],
             "flags": {},
-            "order": 20,
+            "order": 22,
             "mode": 2,
             "inputs": [
                 {
@@ -764,7 +738,7 @@
                 82
             ],
             "flags": {},
-            "order": 27,
+            "order": 29,
             "mode": 2,
             "inputs": [
                 {
@@ -805,7 +779,7 @@
                 262
             ],
             "flags": {},
-            "order": 16,
+            "order": 18,
             "mode": 2,
             "inputs": [
                 {
@@ -903,7 +877,7 @@
                 130
             ],
             "flags": {},
-            "order": 14,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -980,7 +954,7 @@
                 26
             ],
             "flags": {},
-            "order": 12,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -1018,7 +992,7 @@
                 262
             ],
             "flags": {},
-            "order": 17,
+            "order": 19,
             "mode": 0,
             "inputs": [
                 {
@@ -1114,7 +1088,7 @@
                 26
             ],
             "flags": {},
-            "order": 13,
+            "order": 14,
             "mode": 2,
             "inputs": [
                 {
@@ -1152,7 +1126,7 @@
                 366
             ],
             "flags": {},
-            "order": 24,
+            "order": 26,
             "mode": 2,
             "inputs": [
                 {
@@ -1194,7 +1168,7 @@
                     "name": "optional_cond_images",
                     "shape": 7,
                     "type": "IMAGE",
-                    "link": 5424
+                    "link": 5463
                 }
             ],
             "outputs": [
@@ -1240,7 +1214,7 @@
                 130
             ],
             "flags": {},
-            "order": 26,
+            "order": 28,
             "mode": 2,
             "inputs": [
                 {
@@ -1284,7 +1258,7 @@
                 26
             ],
             "flags": {},
-            "order": 21,
+            "order": 23,
             "mode": 0,
             "inputs": [
                 {
@@ -1322,7 +1296,7 @@
                 26
             ],
             "flags": {},
-            "order": 28,
+            "order": 30,
             "mode": 2,
             "inputs": [
                 {
@@ -1394,7 +1368,7 @@
                 98
             ],
             "flags": {},
-            "order": 9,
+            "order": 8,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1429,6 +1403,118 @@
             },
             "widgets_values": [
                 "ltxv-13b-0.9.7-distilled.safetensors"
+            ]
+        },
+        {
+            "id": 1909,
+            "type": "FSLoadImage",
+            "pos": [
+                502.9209899902344,
+                2450.25244140625
+            ],
+            "size": [
+                270,
+                318
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "links": [
+                        5462,
+                        5463
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "FlowScale-AI/flowscale-nodes",
+                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
+                "Node name for S&R": "FSLoadImage"
+            },
+            "widgets_values": [
+                "example.png",
+                "image",
+                "Input Image"
+            ]
+        },
+        {
+            "id": 1910,
+            "type": "FSLoadText",
+            "pos": [
+                34.3140983581543,
+                2406.2861328125
+            ],
+            "size": [
+                400,
+                200
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "links": [
+                        5464
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "FlowScale-AI/flowscale-nodes",
+                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
+                "Node name for S&R": "FSLoadText"
+            },
+            "widgets_values": [
+                "",
+                "Input Text"
+            ]
+        },
+        {
+            "id": 1911,
+            "type": "FSSaveVideo",
+            "pos": [
+                2504.836181640625,
+                1666.4178466796875
+            ],
+            "size": [
+                271.3863220214844,
+                130
+            ],
+            "flags": {},
+            "order": 11,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "video_path",
+                    "type": "STRING",
+                    "links": [
+                        5465
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "FlowScale-AI/flowscale-nodes",
+                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
+                "Node name for S&R": "FSSaveVideo"
+            },
+            "widgets_values": [
+                "FlowScale",
+                24,
+                95,
+                "Output Video"
             ]
         }
     ],
@@ -1480,14 +1566,6 @@
             1338,
             5,
             "NOISE"
-        ],
-        [
-            5162,
-            1206,
-            0,
-            1338,
-            6,
-            "IMAGE"
         ],
         [
             5224,
@@ -1618,14 +1696,6 @@
             "LATENT"
         ],
         [
-            5424,
-            1206,
-            0,
-            1890,
-            7,
-            "IMAGE"
-        ],
-        [
             5426,
             1338,
             0,
@@ -1752,6 +1822,38 @@
             1338,
             0,
             "MODEL"
+        ],
+        [
+            5462,
+            1909,
+            0,
+            1338,
+            6,
+            "IMAGE"
+        ],
+        [
+            5463,
+            1909,
+            0,
+            1890,
+            7,
+            "IMAGE"
+        ],
+        [
+            5464,
+            1910,
+            0,
+            6,
+            1,
+            "STRING"
+        ],
+        [
+            5465,
+            1911,
+            0,
+            1336,
+            4,
+            "STRING"
         ]
     ],
     "groups": [
@@ -1787,8 +1889,8 @@
         "ds": {
             "scale": 0.620921323059157,
             "offset": [
-                -489.39249678220915,
-                -1729.3886038896887
+                -771.2832750840618,
+                -1599.42064681351
             ]
         },
         "frontendVersion": "1.18.0",
