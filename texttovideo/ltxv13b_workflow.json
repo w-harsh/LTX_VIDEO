@@ -42,7 +42,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "medium close-up of a fluffy white baby bunny with oversized expressive eyes, sitting in a lush meadow surrounded by softly swaying pastel wildflowers, vibrant green grass illuminated by warm golden sunlight, gentle breeze rippling through the scene, background filled with dreamy blurred trees and puffy white clouds in a clear blue sky, soft focus highlights and rim light accentuating the fur texture, cheerful and innocent mood, highly detailed fur with smooth shading and subtle shadowing under the bunny, stylized realism with Pixar-like charm, slow circular camera orbit around the bunny to enhance the whimsical and joyful atmosphere"
+                ""
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -1785,8 +1785,8 @@
         "ds": {
             "scale": 0.620921323059157,
             "offset": [
-                629.5946833464584,
-                -1976.4709996964775
+                574.1931246017991,
+                -1874.0425538667048
             ]
         },
         "frontendVersion": "1.18.0",
