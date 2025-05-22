@@ -1,10 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": [
-                "1910",
-                0
-            ],
+            "text": "medium close-up of a fluffy white baby bunny with oversized expressive eyes, sitting in a lush meadow surrounded by softly swaying pastel wildflowers, vibrant green grass illuminated by warm golden sunlight, gentle breeze rippling through the scene, background filled with dreamy blurred trees and puffy white clouds in a clear blue sky, soft focus highlights and rim light accentuating the fur texture, cheerful and innocent mood, highly detailed fur with smooth shading and subtle shadowing under the bunny, stylized realism with Pixar-like charm, slow circular camera orbit around the bunny to enhance the whimsical and joyful atmosphere",
             "clip": [
                 "38",
                 0
@@ -85,10 +82,7 @@
         "inputs": {
             "frame_rate": 24,
             "loop_count": 0,
-            "filename_prefix": [
-                "1911",
-                0
-            ],
+            "filename_prefix": "ltxv",
             "format": "video/h264-mp4",
             "pix_fmt": "yuv420p",
             "crf": 19,
@@ -141,7 +135,7 @@
                 0
             ],
             "optional_cond_images": [
-                "1909",
+                "1912",
                 0
             ]
         },
@@ -243,36 +237,13 @@
             "title": "Load Checkpoint"
         }
     },
-    "1909": {
+    "1912": {
         "inputs": {
-            "image": "example.png",
-            "label": "Input Image"
+            "image": "example.png"
         },
-        "class_type": "FSLoadImage",
+        "class_type": "LoadImage",
         "_meta": {
-            "title": "[FS]⚡Load Image (Input)"
-        }
-    },
-    "1910": {
-        "inputs": {
-            "default_value": "",
-            "label": "Input Text"
-        },
-        "class_type": "FSLoadText",
-        "_meta": {
-            "title": "[FS]⚡Load Text (Input)"
-        }
-    },
-    "1911": {
-        "inputs": {
-            "filename_prefix": "FlowScale",
-            "fps": 24,
-            "quality": 95,
-            "label": "Output Video"
-        },
-        "class_type": "FSSaveVideo",
-        "_meta": {
-            "title": "[FS]⚡Save Video (Output)"
+            "title": "Load Image"
         }
     }
 }
