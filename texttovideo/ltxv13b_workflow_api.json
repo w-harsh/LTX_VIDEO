@@ -1,7 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": "",
+            "text": "Create a short video of a tense samurai confrontation in heavy rain. A lone figure in a kimono holding a drawn katana faces a group of armored samurai, some on horseback, in a dark, misty setting with tall structures in the background. Emphasize the falling rain, water dripping from the katana, and the subtle movements of the characters as they prepare for battle, maintaining the blue-toned, atmospheric mood of the scene",
             "clip": [
                 "38",
                 0
@@ -153,6 +153,146 @@
             "title": "RandomNoise"
         }
     },
+    "1593": {
+        "inputs": {
+            "factor": 0.25,
+            "latents": [
+                "1691",
+                0
+            ],
+            "reference": [
+                "1338",
+                0
+            ]
+        },
+        "class_type": "LTXVAdainLatent",
+        "_meta": {
+            "title": "🅛🅣🅧 LTXV Adain Latent"
+        }
+    },
+    "1598": {
+        "inputs": {
+            "noise_seed": 687075691977797
+        },
+        "class_type": "RandomNoise",
+        "_meta": {
+            "title": "RandomNoise"
+        }
+    },
+    "1599": {
+        "inputs": {
+            "frame_rate": 24,
+            "loop_count": 0,
+            "filename_prefix": "ltxv-up",
+            "format": "video/h264-mp4",
+            "pix_fmt": "yuv420p",
+            "crf": 18,
+            "save_metadata": false,
+            "trim_to_audio": false,
+            "pingpong": false,
+            "save_output": true,
+            "images": [
+                "1897",
+                0
+            ]
+        },
+        "class_type": "VHS_VideoCombine",
+        "_meta": {
+            "title": "Video Combine 🎥🅥🅗🅢"
+        }
+    },
+    "1601": {
+        "inputs": {
+            "tile_size": 768,
+            "overlap": 32,
+            "temporal_size": 32,
+            "temporal_overlap": 32,
+            "samples": [
+                "1890",
+                0
+            ],
+            "vae": [
+                "1908",
+                2
+            ]
+        },
+        "class_type": "VAEDecodeTiled",
+        "_meta": {
+            "title": "VAE Decode (Tiled)"
+        }
+    },
+    "1691": {
+        "inputs": {
+            "samples": [
+                "1338",
+                0
+            ],
+            "upscale_model": [
+                "1828",
+                0
+            ],
+            "vae": [
+                "1908",
+                2
+            ]
+        },
+        "class_type": "LTXVLatentUpsampler",
+        "_meta": {
+            "title": "🅛🅣🅧 LTXV Latent Upsampler"
+        }
+    },
+    "1699": {
+        "inputs": {
+            "grain_intensity": 0.010000000000000002,
+            "saturation": 0.5,
+            "images": [
+                "1894",
+                0
+            ]
+        },
+        "class_type": "LTXVFilmGrain",
+        "_meta": {
+            "title": "🅛🅣🅧 LTXV Film Grain"
+        }
+    },
+    "1813": {
+        "inputs": {
+            "skip_steps_sigma_threshold": 0.9970000000000002,
+            "cfg_star_rescale": true,
+            "sigmas": "1",
+            "cfg_values": "1",
+            "stg_scale_values": "0",
+            "stg_rescale_values": "1",
+            "stg_layers_indices": "[42]",
+            "model": [
+                "1908",
+                0
+            ],
+            "positive": [
+                "1241",
+                0
+            ],
+            "negative": [
+                "1241",
+                1
+            ]
+        },
+        "class_type": "STGGuiderAdvanced",
+        "_meta": {
+            "title": "🅛🅣🅧 STG Guider Advanced"
+        }
+    },
+    "1828": {
+        "inputs": {
+            "upscale_model": "ltxv-spatial-upscaler-0.9.7.safetensors",
+            "spatial_upsample": true,
+            "temporal_upsample": false
+        },
+        "class_type": "LTXVLatentUpsamplerModelLoader",
+        "_meta": {
+            "title": "🅛🅣🅧 LTXV Latent Upsampler Model Loader"
+        }
+    },
     "1872": {
         "inputs": {
             "timestep": 0.05,
@@ -216,10 +356,107 @@
             "title": "🅛🅣🅧 STG Guider Advanced"
         }
     },
+    "1888": {
+        "inputs": {
+            "string": "0.85, 0.7250, 0.6, 0.4219, 0.0"
+        },
+        "class_type": "StringToFloatList",
+        "_meta": {
+            "title": "String to Float List"
+        }
+    },
+    "1889": {
+        "inputs": {
+            "float_list": [
+                "1888",
+                0
+            ]
+        },
+        "class_type": "FloatToSigmas",
+        "_meta": {
+            "title": "Float To Sigmas"
+        }
+    },
+    "1890": {
+        "inputs": {
+            "horizontal_tiles": 1,
+            "vertical_tiles": 1,
+            "overlap": 1,
+            "latents_cond_strength": 0.15,
+            "boost_latent_similarity": false,
+            "crop": "center",
+            "optional_cond_indices": "0",
+            "images_cond_strengths": "0.9",
+            "model": [
+                "1908",
+                0
+            ],
+            "vae": [
+                "1908",
+                2
+            ],
+            "noise": [
+                "1598",
+                0
+            ],
+            "sampler": [
+                "73",
+                0
+            ],
+            "sigmas": [
+                "1889",
+                0
+            ],
+            "guider": [
+                "1813",
+                0
+            ],
+            "latents": [
+                "1593",
+                0
+            ],
+            "optional_cond_images": [
+                "1912",
+                0
+            ]
+        },
+        "class_type": "LTXVTiledSampler",
+        "_meta": {
+            "title": "🅛🅣🅧 LTXV Tiled Sampler"
+        }
+    },
+    "1894": {
+        "inputs": {
+            "upscale_method": "lanczos",
+            "width": 1536,
+            "height": 1024,
+            "crop": "disabled",
+            "image": [
+                "1601",
+                0
+            ]
+        },
+        "class_type": "ImageScale",
+        "_meta": {
+            "title": "Upscale Image"
+        }
+    },
     "1896": {
         "inputs": {
             "anything": [
                 "1335",
+                0
+            ]
+        },
+        "class_type": "easy cleanGpuUsed",
+        "_meta": {
+            "title": "Clean VRAM Used"
+        }
+    },
+    "1897": {
+        "inputs": {
+            "anything": [
+                "1699",
                 0
             ]
         },
@@ -239,7 +476,7 @@
     },
     "1912": {
         "inputs": {
-            "image": "example.png"
+            "image": "thumb-1920-940002.jpg"
         },
         "class_type": "LoadImage",
         "_meta": {
