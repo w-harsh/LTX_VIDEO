@@ -1,8 +1,8 @@
 {
     "id": "394ed254-7306-42a2-9ae6-aa880ce4456d",
     "revision": 0,
-    "last_node_id": 1912,
-    "last_link_id": 5474,
+    "last_node_id": 1915,
+    "last_link_id": 5477,
     "nodes": [
         {
             "id": 6,
@@ -16,13 +16,21 @@
                 204.2556610107422
             ],
             "flags": {},
-            "order": 6,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
                     "name": "clip",
                     "type": "CLIP",
                     "link": 74
+                },
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "text"
+                    },
+                    "link": 5475
                 }
             ],
             "outputs": [
@@ -42,7 +50,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "A lone warrior in dark armor stands on a snowy mountain peak, holding a large sword planted into the ground. Their long hair and tattered cloak billow gently in the icy wind, with a small flame burning defiantly at the edge of their cloak. Snowflakes drift slowly through the air, illuminated by the soft light of a partly cloudy sky with a bright blue hue. The distant mountains are dusted with snow, and the clouds shift subtly, casting faint shadows. The camera slowly circles the warrior from a low angle, capturing their silhouette against the glowing sky and emphasizing the contrast between the flame and the snowy landscape"
+                ""
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -59,7 +67,7 @@
                 213.2843780517578
             ],
             "flags": {},
-            "order": 7,
+            "order": 8,
             "mode": 0,
             "inputs": [
                 {
@@ -172,7 +180,7 @@
                 78
             ],
             "flags": {},
-            "order": 10,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -225,7 +233,7 @@
                 46
             ],
             "flags": {},
-            "order": 13,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -264,10 +272,10 @@
             ],
             "size": [
                 471.0374755859375,
-                334
+                648.691650390625
             ],
             "flags": {},
-            "order": 15,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
@@ -292,6 +300,14 @@
                     "shape": 7,
                     "type": "VAE",
                     "link": null
+                },
+                {
+                    "name": "filename_prefix",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "filename_prefix"
+                    },
+                    "link": 5477
                 }
             ],
             "outputs": [
@@ -322,13 +338,13 @@
                     "hidden": false,
                     "paused": false,
                     "params": {
-                        "filename": "ltxv_00062.mp4",
+                        "filename": "ltxv_00004.mp4",
                         "subfolder": "",
                         "type": "output",
                         "format": "video/h264-mp4",
                         "frame_rate": 24,
-                        "workflow": "ltxv_00062.png",
-                        "fullpath": "D:\\ComfyUI\\ComfyUI_windows_portable\\ComfyUI\\output\\ltxv_00062.mp4"
+                        "workflow": "ltxv_00004.png",
+                        "fullpath": "/comfyui/output/ltxv_00004.mp4"
                     }
                 }
             }
@@ -345,7 +361,7 @@
                 346
             ],
             "flags": {},
-            "order": 12,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
@@ -382,7 +398,7 @@
                     "name": "optional_cond_images",
                     "shape": 7,
                     "type": "IMAGE",
-                    "link": 5466
+                    "link": 5476
                 }
             ],
             "outputs": [
@@ -462,7 +478,7 @@
                 130
             ],
             "flags": {},
-            "order": 9,
+            "order": 10,
             "mode": 0,
             "inputs": [
                 {
@@ -539,7 +555,7 @@
                 26
             ],
             "flags": {},
-            "order": 8,
+            "order": 9,
             "mode": 0,
             "inputs": [
                 {
@@ -577,7 +593,7 @@
                 262
             ],
             "flags": {},
-            "order": 11,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -639,7 +655,7 @@
                 26
             ],
             "flags": {},
-            "order": 14,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
@@ -713,15 +729,15 @@
             ]
         },
         {
-            "id": 1912,
-            "type": "LoadImage",
+            "id": 1913,
+            "type": "FSLoadText",
             "pos": [
-                471.1970520019531,
-                2451.024658203125
+                65.92198181152344,
+                2451.900390625
             ],
             "size": [
-                274.080078125,
-                314
+                400,
+                200
             ],
             "flags": {},
             "order": 5,
@@ -729,26 +745,98 @@
             "inputs": [],
             "outputs": [
                 {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
+                    "name": "text",
+                    "type": "STRING",
                     "links": [
-                        5466
+                        5475
                     ]
-                },
-                {
-                    "name": "MASK",
-                    "type": "MASK",
-                    "links": null
                 }
             ],
             "properties": {
-                "cnr_id": "comfy-core",
-                "ver": "0.3.30",
-                "Node name for S&R": "LoadImage"
+                "aux_id": "FlowScale-AI/flowscale-nodes",
+                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
+                "Node name for S&R": "FSLoadText"
             },
             "widgets_values": [
-                "warrior-winter-watch-stockcake.jpg",
-                "image"
+                "",
+                "Input Text"
+            ]
+        },
+        {
+            "id": 1914,
+            "type": "FSLoadImage",
+            "pos": [
+                559.11376953125,
+                2448.975830078125
+            ],
+            "size": [
+                270,
+                318
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "links": [
+                        5476
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "FlowScale-AI/flowscale-nodes",
+                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
+                "Node name for S&R": "FSLoadImage"
+            },
+            "widgets_values": [
+                "example.png",
+                "image",
+                "Input Image"
+            ]
+        },
+        {
+            "id": 1915,
+            "type": "FSSaveVideo",
+            "pos": [
+                2014.4278564453125,
+                2123.652587890625
+            ],
+            "size": [
+                271.3863220214844,
+                130
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "video_path",
+                    "type": "STRING",
+                    "links": [
+                        5477
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "FlowScale-AI/flowscale-nodes",
+                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
+                "Node name for S&R": "FSSaveVideo"
+            },
+            "widgets_values": [
+                "FlowScale",
+                24,
+                95,
+                "Output Video"
             ]
         }
     ],
@@ -906,12 +994,28 @@
             "MODEL"
         ],
         [
-            5466,
-            1912,
+            5475,
+            1913,
+            0,
+            6,
+            1,
+            "STRING"
+        ],
+        [
+            5476,
+            1914,
             0,
             1338,
             6,
             "IMAGE"
+        ],
+        [
+            5477,
+            1915,
+            0,
+            1336,
+            4,
+            "STRING"
         ]
     ],
     "groups": [
@@ -932,10 +1036,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.9090909090909091,
+            "scale": 0.6209213230591555,
             "offset": [
-                -1573.3510166852084,
-                -1941.2437725737884
+                -302.1911195834101,
+                -1938.1460079431913
             ]
         },
         "frontendVersion": "1.18.0",
