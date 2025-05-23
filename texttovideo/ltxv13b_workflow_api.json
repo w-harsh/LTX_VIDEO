@@ -1,7 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": "A lone warrior in dark armor stands on a snowy mountain peak, holding a large sword planted into the ground. Their long hair and tattered cloak billow gently in the icy wind, with a small flame burning defiantly at the edge of their cloak. Snowflakes drift slowly through the air, illuminated by the soft light of a partly cloudy sky with a bright blue hue. The distant mountains are dusted with snow, and the clouds shift subtly, casting faint shadows. The camera slowly circles the warrior from a low angle, capturing their silhouette against the glowing sky and emphasizing the contrast between the flame and the snowy landscape",
+            "text": "Create a short video of a tense samurai confrontation in heavy rain. A lone figure in a kimono holding a drawn katana faces a group of armored samurai, some on horseback, in a dark, misty setting with tall structures in the background. Emphasize the falling rain, water dripping from the katana, and the subtle movements of the characters as they prepare for battle, maintaining the blue-toned, atmospheric mood of the scene\n\n",
             "clip": [
                 "38",
                 0
@@ -219,10 +219,7 @@
         "inputs": {
             "frame_rate": 24,
             "loop_count": 0,
-            "filename_prefix": [
-                "1922",
-                0
-            ],
+            "filename_prefix": "ltxv",
             "format": "video/h264-mp4",
             "pix_fmt": "yuv420p",
             "crf": 19,
@@ -240,21 +237,9 @@
             "title": "Video Combine 🎥🅥🅗🅢"
         }
     },
-    "1922": {
-        "inputs": {
-            "filename_prefix": "FlowScale",
-            "fps": 24,
-            "quality": 95,
-            "label": "Output Video"
-        },
-        "class_type": "FSSaveVideo",
-        "_meta": {
-            "title": "[FS]⚡Save Video (Output)"
-        }
-    },
     "1923": {
         "inputs": {
-            "image": "example.png"
+            "image": "thumb-1920-940002.jpg"
         },
         "class_type": "LoadImage",
         "_meta": {
