@@ -682,7 +682,7 @@
             ],
             "size": [
                 408.6058349609375,
-                600.8040161132812
+                511.070556640625
             ],
             "flags": {},
             "order": 15,
@@ -725,7 +725,7 @@
                 "Node name for S&R": "VHS_VideoCombine"
             },
             "widgets_values": {
-                "frame_rate": 8,
+                "frame_rate": 24,
                 "loop_count": 0,
                 "filename_prefix": "AnimateDiff",
                 "format": "image/gif",
@@ -734,7 +734,15 @@
                 "videopreview": {
                     "hidden": false,
                     "paused": false,
-                    "params": {}
+                    "params": {
+                        "filename": "AnimateDiff_00002.gif",
+                        "subfolder": "",
+                        "type": "output",
+                        "format": "image/gif",
+                        "frame_rate": 8,
+                        "workflow": "AnimateDiff_00002.png",
+                        "fullpath": "/comfyui/output/AnimateDiff_00002.gif"
+                    }
                 }
             }
         }
@@ -919,10 +927,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.6830134553650705,
+            "scale": 0.9090909090909091,
             "offset": [
-                72.90729876702568,
-                -1882.8458525956053
+                -1416.7073350737437,
+                -1919.553489665424
             ]
         },
         "frontendVersion": "1.18.0",
