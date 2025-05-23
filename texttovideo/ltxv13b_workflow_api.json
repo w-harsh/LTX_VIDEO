@@ -226,7 +226,7 @@
     },
     "1918": {
         "inputs": {
-            "frame_rate": 8,
+            "frame_rate": 24,
             "loop_count": 0,
             "filename_prefix": "AnimateDiff",
             "format": "image/gif",
