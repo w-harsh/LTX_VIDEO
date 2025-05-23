@@ -16,7 +16,7 @@
                 204.2556610107422
             ],
             "flags": {},
-            "order": 7,
+            "order": 6,
             "mode": 0,
             "inputs": [
                 {
@@ -42,7 +42,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "A lone warrior in dark armor stands on a snowy mountain peak, holding a large sword planted into the ground. Their long hair and tattered cloak billow gently in the icy wind, with a small flame burning defiantly at the edge of their cloak. Snowflakes drift slowly through the air, illuminated by the soft light of a partly cloudy sky with a bright blue hue. The distant mountains are dusted with snow, and the clouds shift subtly, casting faint shadows. The camera slowly circles the warrior from a low angle, capturing their silhouette against the glowing sky and emphasizing the contrast between the flame and the snowy landscape"
+                "Create a short video of a tense samurai confrontation in heavy rain. A lone figure in a kimono holding a drawn katana faces a group of armored samurai, some on horseback, in a dark, misty setting with tall structures in the background. Emphasize the falling rain, water dripping from the katana, and the subtle movements of the characters as they prepare for battle, maintaining the blue-toned, atmospheric mood of the scene\n\n"
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -59,7 +59,7 @@
                 213.2843780517578
             ],
             "flags": {},
-            "order": 8,
+            "order": 7,
             "mode": 0,
             "inputs": [
                 {
@@ -172,7 +172,7 @@
                 78
             ],
             "flags": {},
-            "order": 11,
+            "order": 10,
             "mode": 0,
             "inputs": [
                 {
@@ -225,7 +225,7 @@
                 46
             ],
             "flags": {},
-            "order": 14,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -267,7 +267,7 @@
                 346
             ],
             "flags": {},
-            "order": 13,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -384,7 +384,7 @@
                 130
             ],
             "flags": {},
-            "order": 10,
+            "order": 9,
             "mode": 0,
             "inputs": [
                 {
@@ -461,7 +461,7 @@
                 26
             ],
             "flags": {},
-            "order": 9,
+            "order": 8,
             "mode": 0,
             "inputs": [
                 {
@@ -499,7 +499,7 @@
                 262
             ],
             "flags": {},
-            "order": 12,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -561,7 +561,7 @@
                 26
             ],
             "flags": {},
-            "order": 15,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
@@ -646,7 +646,7 @@
                 648.691650390625
             ],
             "flags": {},
-            "order": 16,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -671,14 +671,6 @@
                     "shape": 7,
                     "type": "VAE",
                     "link": null
-                },
-                {
-                    "name": "filename_prefix",
-                    "type": "STRING",
-                    "widget": {
-                        "name": "filename_prefix"
-                    },
-                    "link": 5485
                 }
             ],
             "outputs": [
@@ -721,48 +713,6 @@
             }
         },
         {
-            "id": 1922,
-            "type": "FSSaveVideo",
-            "pos": [
-                1973.4383544921875,
-                2291.9482421875
-            ],
-            "size": [
-                271.3863220214844,
-                130
-            ],
-            "flags": {},
-            "order": 5,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": null
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "video_path",
-                    "type": "STRING",
-                    "links": [
-                        5485
-                    ]
-                }
-            ],
-            "properties": {
-                "aux_id": "FlowScale-AI/flowscale-nodes",
-                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
-                "Node name for S&R": "FSSaveVideo"
-            },
-            "widgets_values": [
-                "FlowScale",
-                24,
-                95,
-                "Output Video"
-            ]
-        },
-        {
             "id": 1923,
             "type": "LoadImage",
             "pos": [
@@ -774,7 +724,7 @@
                 314
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -797,7 +747,7 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "example.png",
+                "thumb-1920-940002.jpg",
                 "image"
             ]
         }
@@ -956,14 +906,6 @@
             "IMAGE"
         ],
         [
-            5485,
-            1922,
-            0,
-            1919,
-            4,
-            "STRING"
-        ],
-        [
             5486,
             1923,
             0,
@@ -990,10 +932,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.6830134553650713,
+            "scale": 0.42409761837248483,
             "offset": [
-                -1338.434682288966,
-                -1918.4864348170158
+                522.4689733953511,
+                -1584.6184513768576
             ]
         },
         "frontendVersion": "1.18.0",
