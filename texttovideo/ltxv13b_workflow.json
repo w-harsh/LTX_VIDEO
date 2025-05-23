@@ -1,8 +1,8 @@
 {
     "id": "394ed254-7306-42a2-9ae6-aa880ce4456d",
     "revision": 0,
-    "last_node_id": 1918,
-    "last_link_id": 5481,
+    "last_node_id": 1919,
+    "last_link_id": 5482,
     "nodes": [
         {
             "id": 6,
@@ -575,7 +575,7 @@
                     "name": "output",
                     "type": "*",
                     "links": [
-                        5481
+                        5482
                     ]
                 }
             ],
@@ -674,15 +674,15 @@
             ]
         },
         {
-            "id": 1918,
+            "id": 1919,
             "type": "VHS_VideoCombine",
             "pos": [
-                2341.527099609375,
-                1985.1099853515625
+                2332.347412109375,
+                2006.6734619140625
             ],
             "size": [
-                408.6058349609375,
-                511.070556640625
+                471.0374755859375,
+                334
             ],
             "flags": {},
             "order": 15,
@@ -691,7 +691,7 @@
                 {
                     "name": "images",
                     "type": "IMAGE",
-                    "link": 5481
+                    "link": 5482
                 },
                 {
                     "name": "audio",
@@ -727,21 +727,25 @@
             "widgets_values": {
                 "frame_rate": 24,
                 "loop_count": 0,
-                "filename_prefix": "AnimateDiff",
-                "format": "image/gif",
+                "filename_prefix": "ltxv",
+                "format": "video/h264-mp4",
+                "pix_fmt": "yuv420p",
+                "crf": 19,
+                "save_metadata": true,
+                "trim_to_audio": false,
                 "pingpong": false,
                 "save_output": true,
                 "videopreview": {
                     "hidden": false,
                     "paused": false,
                     "params": {
-                        "filename": "AnimateDiff_00002.gif",
+                        "filename": "ltxv_00056.mp4",
                         "subfolder": "",
                         "type": "output",
-                        "format": "image/gif",
-                        "frame_rate": 8,
-                        "workflow": "AnimateDiff_00002.png",
-                        "fullpath": "/comfyui/output/AnimateDiff_00002.gif"
+                        "format": "video/h264-mp4",
+                        "frame_rate": 24,
+                        "workflow": "ltxv_00056.png",
+                        "fullpath": "D:\\ComfyUI\\ComfyUI_windows_portable\\ComfyUI\\output\\ltxv_00056.mp4"
                     }
                 }
             }
@@ -901,10 +905,10 @@
             "IMAGE"
         ],
         [
-            5481,
+            5482,
             1896,
             0,
-            1918,
+            1919,
             0,
             "IMAGE"
         ]
