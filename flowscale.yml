@@ -10,26 +10,26 @@ workflows:
   - id: 8n3z9a40nl
     name: ltxv13b_workflow_api.json
     file: texttovideo/ltxv13b_workflow_api.json
-    version: 14
+    version: 15
     description: ''
     inputs:
-      - path: 1913.inputs.default_value
+      - path: 1920.inputs.default_value
         label: Input Text
-        parameter_name: default_value_46256
+        parameter_name: default_value_17661
         type: string
         demo_type: text
         category: input
         randomize: false
-      - path: 1914.inputs.image
+      - path: 1921.inputs.image
         label: Input Image
-        parameter_name: image_13245
+        parameter_name: image_56636
         type: string
         demo_type: image
         category: input
         randomize: false
-      - path: 1915.inputs.filename_prefix
+      - path: 1922.inputs.filename_prefix
         label: filename_prefix
-        parameter_name: filename_prefix_11672
+        parameter_name: filename_prefix_94263
         type: string
         demo_type: text
         category: output
@@ -43,4 +43,4 @@ normal_workflows:
   - id: bxodk8s0jfo
     name: ltxv13b_workflow.json
     file: texttovideo/ltxv13b_workflow.json
-    version: 14
+    version: 15
