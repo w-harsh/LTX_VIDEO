@@ -1,10 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": [
-                "1920",
-                0
-            ],
+            "text": "A lone warrior in dark armor stands on a snowy mountain peak, holding a large sword planted into the ground. Their long hair and tattered cloak billow gently in the icy wind, with a small flame burning defiantly at the edge of their cloak. Snowflakes drift slowly through the air, illuminated by the soft light of a partly cloudy sky with a bright blue hue. The distant mountains are dusted with snow, and the clouds shift subtly, casting faint shadows. The camera slowly circles the warrior from a low angle, capturing their silhouette against the glowing sky and emphasizing the contrast between the flame and the snowy landscape",
             "clip": [
                 "38",
                 0
@@ -116,7 +113,7 @@
                 0
             ],
             "optional_cond_images": [
-                "1921",
+                "1923",
                 0
             ]
         },
@@ -243,26 +240,6 @@
             "title": "Video Combine 🎥🅥🅗🅢"
         }
     },
-    "1920": {
-        "inputs": {
-            "default_value": "",
-            "label": "Input Text"
-        },
-        "class_type": "FSLoadText",
-        "_meta": {
-            "title": "[FS]⚡Load Text (Input)"
-        }
-    },
-    "1921": {
-        "inputs": {
-            "image": "example.png",
-            "label": "Input Image"
-        },
-        "class_type": "FSLoadImage",
-        "_meta": {
-            "title": "[FS]⚡Load Image (Input)"
-        }
-    },
     "1922": {
         "inputs": {
             "filename_prefix": "FlowScale",
@@ -273,6 +250,15 @@
         "class_type": "FSSaveVideo",
         "_meta": {
             "title": "[FS]⚡Save Video (Output)"
+        }
+    },
+    "1923": {
+        "inputs": {
+            "image": "example.png"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
         }
     }
 }
