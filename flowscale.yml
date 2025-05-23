@@ -44,7 +44,3 @@ normal_workflows:
     name: ltxv13b_workflow.json
     file: texttovideo/ltxv13b_workflow.json
     version: 14
-  - id: jfyhsbwv5hl
-    name: ltxv_13b_0.9.7-fp8_i2v_extend_landscape_768x512px.json
-    file: texttovideo/ltxv_13b_0.9.7-fp8_i2v_extend_landscape_768x512px.json
-    version: 0
