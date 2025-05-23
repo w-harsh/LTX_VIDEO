@@ -1,8 +1,8 @@
 {
     "id": "394ed254-7306-42a2-9ae6-aa880ce4456d",
     "revision": 0,
-    "last_node_id": 1922,
-    "last_link_id": 5485,
+    "last_node_id": 1923,
+    "last_link_id": 5486,
     "nodes": [
         {
             "id": 6,
@@ -16,21 +16,13 @@
                 204.2556610107422
             ],
             "flags": {},
-            "order": 11,
+            "order": 7,
             "mode": 0,
             "inputs": [
                 {
                     "name": "clip",
                     "type": "CLIP",
                     "link": 74
-                },
-                {
-                    "name": "text",
-                    "type": "STRING",
-                    "widget": {
-                        "name": "text"
-                    },
-                    "link": 5483
                 }
             ],
             "outputs": [
@@ -50,7 +42,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                ""
+                "A lone warrior in dark armor stands on a snowy mountain peak, holding a large sword planted into the ground. Their long hair and tattered cloak billow gently in the icy wind, with a small flame burning defiantly at the edge of their cloak. Snowflakes drift slowly through the air, illuminated by the soft light of a partly cloudy sky with a bright blue hue. The distant mountains are dusted with snow, and the clouds shift subtly, casting faint shadows. The camera slowly circles the warrior from a low angle, capturing their silhouette against the glowing sky and emphasizing the contrast between the flame and the snowy landscape"
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -180,7 +172,7 @@
                 78
             ],
             "flags": {},
-            "order": 12,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -233,7 +225,7 @@
                 46
             ],
             "flags": {},
-            "order": 15,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
@@ -275,7 +267,7 @@
                 346
             ],
             "flags": {},
-            "order": 14,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -312,7 +304,7 @@
                     "name": "optional_cond_images",
                     "shape": 7,
                     "type": "IMAGE",
-                    "link": 5484
+                    "link": 5486
                 }
             ],
             "outputs": [
@@ -325,10 +317,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "Lightricks/ComfyUI-LTXVideo",
+                "cnr_id": "ComfyUI-LTXVideo",
                 "ver": "6e9e6de05624b0aab09b81a2f4a5f473fa97988a",
                 "Node name for S&R": "LTXVBaseSampler",
-                "cnr_id": "ComfyUI-LTXVideo"
+                "aux_id": "Lightricks/ComfyUI-LTXVideo"
             },
             "widgets_values": [
                 768,
@@ -411,10 +403,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "Lightricks/ComfyUI-LTXVideo",
+                "cnr_id": "ComfyUI-LTXVideo",
                 "ver": "6e9e6de05624b0aab09b81a2f4a5f473fa97988a",
                 "Node name for S&R": "Set VAE Decoder Noise",
-                "cnr_id": "ComfyUI-LTXVideo"
+                "aux_id": "Lightricks/ComfyUI-LTXVideo"
             },
             "widgets_values": [
                 0.05,
@@ -448,10 +440,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "kijai/ComfyUI-KJNodes",
+                "cnr_id": "comfyui-kjnodes",
                 "ver": "0addfc6101f7a834c7fb6e0a1b26529360ab5350",
                 "Node name for S&R": "StringToFloatList",
-                "cnr_id": "comfyui-kjnodes"
+                "aux_id": "kijai/ComfyUI-KJNodes"
             },
             "widgets_values": [
                 "1.0000, 0.9937, 0.9875, 0.9812, 0.9750, 0.9094, 0.7250, 0.4219, 0.0"
@@ -488,10 +480,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "kijai/ComfyUI-KJNodes",
+                "cnr_id": "comfyui-kjnodes",
                 "ver": "1.1.0",
                 "Node name for S&R": "FloatToSigmas",
-                "cnr_id": "comfyui-kjnodes"
+                "aux_id": "kijai/ComfyUI-KJNodes"
             },
             "widgets_values": []
         },
@@ -507,7 +499,7 @@
                 262
             ],
             "flags": {},
-            "order": 13,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -542,10 +534,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "Lightricks/ComfyUI-LTXVideo",
+                "cnr_id": "ComfyUI-LTXVideo",
                 "ver": "6e9e6de05624b0aab09b81a2f4a5f473fa97988a",
                 "Node name for S&R": "STGGuiderAdvanced",
-                "cnr_id": "ComfyUI-LTXVideo"
+                "aux_id": "Lightricks/ComfyUI-LTXVideo"
             },
             "widgets_values": [
                 0.9970000000000002,
@@ -569,7 +561,7 @@
                 26
             ],
             "flags": {},
-            "order": 16,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -588,10 +580,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "yolain/ComfyUI-Easy-Use",
+                "cnr_id": "comfyui-easy-use",
                 "ver": "d287e28e5c3051d037cca4318305d0ed827420b4",
                 "Node name for S&R": "easy cleanGpuUsed",
-                "cnr_id": "comfyui-easy-use"
+                "aux_id": "yolain/ComfyUI-Easy-Use"
             },
             "widgets_values": []
         },
@@ -654,7 +646,7 @@
                 648.691650390625
             ],
             "flags": {},
-            "order": 17,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
@@ -697,10 +689,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
+                "cnr_id": "comfyui-videohelpersuite",
                 "ver": "a7ce59e381934733bfae03b1be029756d6ce936d",
                 "Node name for S&R": "VHS_VideoCombine",
-                "cnr_id": "comfyui-videohelpersuite"
+                "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite"
             },
             "widgets_values": {
                 "frame_rate": 24,
@@ -729,75 +721,6 @@
             }
         },
         {
-            "id": 1920,
-            "type": "FSLoadText",
-            "pos": [
-                100.47637939453125,
-                2488.552490234375
-            ],
-            "size": [
-                400,
-                200
-            ],
-            "flags": {},
-            "order": 5,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [
-                {
-                    "name": "text",
-                    "type": "STRING",
-                    "links": [
-                        5483
-                    ]
-                }
-            ],
-            "properties": {
-                "aux_id": "FlowScale-AI/flowscale-nodes",
-                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
-                "Node name for S&R": "FSLoadText"
-            },
-            "widgets_values": [
-                "",
-                "Input Text"
-            ]
-        },
-        {
-            "id": 1921,
-            "type": "FSLoadImage",
-            "pos": [
-                562.54638671875,
-                2458.392333984375
-            ],
-            "size": [
-                270,
-                318
-            ],
-            "flags": {},
-            "order": 6,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [
-                {
-                    "name": "image",
-                    "type": "IMAGE",
-                    "links": [
-                        5484
-                    ]
-                }
-            ],
-            "properties": {
-                "aux_id": "FlowScale-AI/flowscale-nodes",
-                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
-                "Node name for S&R": "FSLoadImage"
-            },
-            "widgets_values": [
-                "example.png",
-                "image",
-                "Input Image"
-            ]
-        },
-        {
             "id": 1922,
             "type": "FSSaveVideo",
             "pos": [
@@ -809,7 +732,7 @@
                 130
             ],
             "flags": {},
-            "order": 7,
+            "order": 5,
             "mode": 0,
             "inputs": [
                 {
@@ -837,6 +760,45 @@
                 24,
                 95,
                 "Output Video"
+            ]
+        },
+        {
+            "id": 1923,
+            "type": "LoadImage",
+            "pos": [
+                470.8758850097656,
+                2439.380126953125
+            ],
+            "size": [
+                274.080078125,
+                314
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        5486
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.30",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "example.png",
+                "image"
             ]
         }
     ],
@@ -994,28 +956,20 @@
             "IMAGE"
         ],
         [
-            5483,
-            1920,
-            0,
-            6,
-            1,
-            "STRING"
-        ],
-        [
-            5484,
-            1921,
-            0,
-            1338,
-            6,
-            "IMAGE"
-        ],
-        [
             5485,
             1922,
             0,
             1919,
             4,
             "STRING"
+        ],
+        [
+            5486,
+            1923,
+            0,
+            1338,
+            6,
+            "IMAGE"
         ]
     ],
     "groups": [
@@ -1036,10 +990,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.424097618372485,
+            "scale": 0.6830134553650713,
             "offset": [
-                403.5403271649799,
-                -1743.6234757837008
+                -1338.434682288966,
+                -1918.4864348170158
             ]
         },
         "frontendVersion": "1.18.0",
