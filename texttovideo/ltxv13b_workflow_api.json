@@ -1,10 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": [
-                "1924",
-                0
-            ],
+            "text": "\nCreate a short video of a tense samurai confrontation in heavy rain. A lone figure in a kimono holding a drawn katana faces a group of armored samurai, some on horseback, in a dark, misty setting with tall structures in the background. Emphasize the falling rain, water dripping from the katana, and the subtle movements of the characters as they prepare for battle, maintaining the blue-toned, atmospheric mood of the scene",
             "clip": [
                 "38",
                 0
@@ -116,7 +113,7 @@
                 0
             ],
             "optional_cond_images": [
-                "1925",
+                "1929",
                 0
             ]
         },
@@ -218,40 +215,35 @@
             "title": "Load Checkpoint"
         }
     },
-    "1924": {
+    "1928": {
         "inputs": {
-            "default_value": "",
-            "label": "Input Text"
-        },
-        "class_type": "FSLoadText",
-        "_meta": {
-            "title": "[FS]⚡Load Text (Input)"
-        }
-    },
-    "1925": {
-        "inputs": {
-            "image": "example.png",
-            "label": "Input Image"
-        },
-        "class_type": "FSLoadImage",
-        "_meta": {
-            "title": "[FS]⚡Load Image (Input)"
-        }
-    },
-    "1927": {
-        "inputs": {
-            "filename_prefix": "FlowScale",
-            "fps": 24,
-            "quality": 100,
-            "label": "Output Video",
+            "frame_rate": 24,
+            "loop_count": 0,
+            "filename_prefix": "ltxv",
+            "format": "video/h264-mp4",
+            "pix_fmt": "yuv420p",
+            "crf": 19,
+            "save_metadata": true,
+            "trim_to_audio": false,
+            "pingpong": false,
+            "save_output": true,
             "images": [
                 "1896",
                 0
             ]
         },
-        "class_type": "FSSaveVideo",
+        "class_type": "VHS_VideoCombine",
         "_meta": {
-            "title": "[FS]⚡Save Video (Output)"
+            "title": "Video Combine 🎥🅥🅗🅢"
+        }
+    },
+    "1929": {
+        "inputs": {
+            "image": "thumb-1920-940002.jpg"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
         }
     }
 }
