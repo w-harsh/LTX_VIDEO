@@ -1,36 +1,28 @@
 {
     "id": "394ed254-7306-42a2-9ae6-aa880ce4456d",
     "revision": 0,
-    "last_node_id": 1927,
-    "last_link_id": 5491,
+    "last_node_id": 1929,
+    "last_link_id": 5493,
     "nodes": [
         {
             "id": 6,
             "type": "CLIPTextEncode",
             "pos": [
-                469.26678466796875,
-                1917.3328857421875
+                348.15643310546875,
+                1909.602294921875
             ],
             "size": [
                 307.2346496582031,
                 204.2556610107422
             ],
             "flags": {},
-            "order": 10,
+            "order": 6,
             "mode": 0,
             "inputs": [
                 {
                     "name": "clip",
                     "type": "CLIP",
                     "link": 74
-                },
-                {
-                    "name": "text",
-                    "type": "STRING",
-                    "widget": {
-                        "name": "text"
-                    },
-                    "link": 5487
                 }
             ],
             "outputs": [
@@ -50,7 +42,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "\n"
+                "\nCreate a short video of a tense samurai confrontation in heavy rain. A lone figure in a kimono holding a drawn katana faces a group of armored samurai, some on horseback, in a dark, misty setting with tall structures in the background. Emphasize the falling rain, water dripping from the katana, and the subtle movements of the characters as they prepare for battle, maintaining the blue-toned, atmospheric mood of the scene"
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -59,8 +51,8 @@
             "id": 7,
             "type": "CLIPTextEncode",
             "pos": [
-                459.26678466796875,
-                2177.33251953125
+                338.15643310546875,
+                2169.60205078125
             ],
             "size": [
                 317.832275390625,
@@ -102,8 +94,8 @@
             "id": 38,
             "type": "CLIPLoader",
             "pos": [
-                63.05613708496094,
-                2163.697265625
+                -58.05422592163086,
+                2155.966796875
             ],
             "size": [
                 315,
@@ -139,8 +131,8 @@
             "id": 73,
             "type": "KSamplerSelect",
             "pos": [
-                1179.2664794921875,
-                2347.33251953125
+                1058.1558837890625,
+                2339.60205078125
             ],
             "size": [
                 287.8743896484375,
@@ -172,15 +164,15 @@
             "id": 1241,
             "type": "LTXVConditioning",
             "pos": [
-                829.2666625976562,
-                2047.333251953125
+                708.1563110351562,
+                2039.6025390625
             ],
             "size": [
                 328.21636962890625,
                 78
             ],
             "flags": {},
-            "order": 11,
+            "order": 10,
             "mode": 0,
             "inputs": [
                 {
@@ -225,15 +217,15 @@
             "id": 1335,
             "type": "VAEDecode",
             "pos": [
-                1859.2664794921875,
-                1987.3328857421875
+                1738.1558837890625,
+                1979.602294921875
             ],
             "size": [
                 210,
                 46
             ],
             "flags": {},
-            "order": 14,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -267,15 +259,15 @@
             "id": 1338,
             "type": "LTXVBaseSampler",
             "pos": [
-                1507.003662109375,
-                1950.333251953125
+                1385.89306640625,
+                1942.6026611328125
             ],
             "size": [
                 312.3999938964844,
                 346
             ],
             "flags": {},
-            "order": 13,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -312,7 +304,7 @@
                     "name": "optional_cond_images",
                     "shape": 7,
                     "type": "IMAGE",
-                    "link": 5488
+                    "link": 5493
                 }
             ],
             "outputs": [
@@ -347,8 +339,8 @@
             "id": 1507,
             "type": "RandomNoise",
             "pos": [
-                1179.2664794921875,
-                2547.33251953125
+                1058.1558837890625,
+                2539.60205078125
             ],
             "size": [
                 287.8743896484375,
@@ -384,8 +376,8 @@
             "id": 1872,
             "type": "Set VAE Decoder Noise",
             "pos": [
-                1615.552001953125,
-                2407.33251953125
+                1494.44140625,
+                2399.60205078125
             ],
             "size": [
                 235.1999969482422,
@@ -427,8 +419,8 @@
             "id": 1875,
             "type": "StringToFloatList",
             "pos": [
-                931.7349243164062,
-                2467.09326171875
+                810.6245727539062,
+                2459.36279296875
             ],
             "size": [
                 210,
@@ -461,8 +453,8 @@
             "id": 1876,
             "type": "FloatToSigmas",
             "pos": [
-                1179.2664794921875,
-                2467.33251953125
+                1058.1558837890625,
+                2459.60205078125
             ],
             "size": [
                 287.8743896484375,
@@ -499,15 +491,15 @@
             "id": 1887,
             "type": "STGGuiderAdvanced",
             "pos": [
-                1179.2664794921875,
-                2027.333251953125
+                1058.1558837890625,
+                2019.6026611328125
             ],
             "size": [
                 287.8743896484375,
                 262
             ],
             "flags": {},
-            "order": 12,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -561,15 +553,15 @@
             "id": 1896,
             "type": "easy cleanGpuUsed",
             "pos": [
-                1907.4271240234375,
-                2131.2646484375
+                1786.3165283203125,
+                2123.5341796875
             ],
             "size": [
                 157.38925170898438,
                 26
             ],
             "flags": {},
-            "order": 15,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
@@ -583,7 +575,7 @@
                     "name": "output",
                     "type": "*",
                     "links": [
-                        5491
+                        5492
                     ]
                 }
             ],
@@ -599,8 +591,8 @@
             "id": 1908,
             "type": "CheckpointLoaderSimple",
             "pos": [
-                54.4510498046875,
-                1984.08349609375
+                -66.65930938720703,
+                1976.3529052734375
             ],
             "size": [
                 270,
@@ -643,15 +635,93 @@
             ]
         },
         {
-            "id": 1924,
-            "type": "FSLoadText",
+            "id": 1928,
+            "type": "VHS_VideoCombine",
             "pos": [
-                63.309600830078125,
-                2469.08447265625
+                2010.7696533203125,
+                1983.2991943359375
             ],
             "size": [
-                400,
-                200
+                471.0374755859375,
+                334
+            ],
+            "flags": {},
+            "order": 15,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 5492
+                },
+                {
+                    "name": "audio",
+                    "shape": 7,
+                    "type": "AUDIO",
+                    "link": null
+                },
+                {
+                    "name": "meta_batch",
+                    "shape": 7,
+                    "type": "VHS_BatchManager",
+                    "link": null
+                },
+                {
+                    "name": "vae",
+                    "shape": 7,
+                    "type": "VAE",
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "Filenames",
+                    "type": "VHS_FILENAMES",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
+                "ver": "a7ce59e381934733bfae03b1be029756d6ce936d",
+                "Node name for S&R": "VHS_VideoCombine",
+                "cnr_id": "comfyui-videohelpersuite"
+            },
+            "widgets_values": {
+                "frame_rate": 24,
+                "loop_count": 0,
+                "filename_prefix": "ltxv",
+                "format": "video/h264-mp4",
+                "pix_fmt": "yuv420p",
+                "crf": 19,
+                "save_metadata": true,
+                "trim_to_audio": false,
+                "pingpong": false,
+                "save_output": true,
+                "videopreview": {
+                    "hidden": false,
+                    "paused": false,
+                    "params": {
+                        "filename": "ltxv_00056.mp4",
+                        "subfolder": "",
+                        "type": "output",
+                        "format": "video/h264-mp4",
+                        "frame_rate": 24,
+                        "workflow": "ltxv_00056.png",
+                        "fullpath": "D:\\ComfyUI\\ComfyUI_windows_portable\\ComfyUI\\output\\ltxv_00056.mp4"
+                    }
+                }
+            }
+        },
+        {
+            "id": 1929,
+            "type": "LoadImage",
+            "pos": [
+                331.614501953125,
+                2446.690673828125
+            ],
+            "size": [
+                274.080078125,
+                314
             ],
             "flags": {},
             "order": 5,
@@ -659,96 +729,26 @@
             "inputs": [],
             "outputs": [
                 {
-                    "name": "text",
-                    "type": "STRING",
-                    "links": [
-                        5487
-                    ]
-                }
-            ],
-            "properties": {
-                "aux_id": "FlowScale-AI/flowscale-nodes",
-                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
-                "Node name for S&R": "FSLoadText"
-            },
-            "widgets_values": [
-                "",
-                "Input Text"
-            ]
-        },
-        {
-            "id": 1925,
-            "type": "FSLoadImage",
-            "pos": [
-                540.3401489257812,
-                2454.709716796875
-            ],
-            "size": [
-                270,
-                318
-            ],
-            "flags": {},
-            "order": 6,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [
-                {
-                    "name": "image",
+                    "name": "IMAGE",
                     "type": "IMAGE",
                     "links": [
-                        5488
+                        5493
                     ]
-                }
-            ],
-            "properties": {
-                "aux_id": "FlowScale-AI/flowscale-nodes",
-                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
-                "Node name for S&R": "FSLoadImage"
-            },
-            "widgets_values": [
-                "example.png",
-                "image",
-                "Input Image"
-            ]
-        },
-        {
-            "id": 1927,
-            "type": "FSSaveVideo",
-            "pos": [
-                2254.92333984375,
-                2265.138671875
-            ],
-            "size": [
-                271.3863220214844,
-                130
-            ],
-            "flags": {},
-            "order": 16,
-            "mode": 0,
-            "inputs": [
+                },
                 {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 5491
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "video_path",
-                    "type": "STRING",
+                    "name": "MASK",
+                    "type": "MASK",
                     "links": null
                 }
             ],
             "properties": {
-                "aux_id": "FlowScale-AI/flowscale-nodes",
-                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
-                "Node name for S&R": "FSSaveVideo"
+                "cnr_id": "comfy-core",
+                "ver": "0.3.30",
+                "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "FlowScale",
-                24,
-                100,
-                "Output Video"
+                "thumb-1920-940002.jpg",
+                "image"
             ]
         }
     ],
@@ -898,27 +898,19 @@
             "MODEL"
         ],
         [
-            5487,
-            1924,
+            5492,
+            1896,
             0,
-            6,
-            1,
-            "STRING"
-        ],
-        [
-            5488,
-            1925,
+            1928,
             0,
-            1338,
-            6,
             "IMAGE"
         ],
         [
-            5491,
-            1896,
+            5493,
+            1929,
             0,
-            1927,
-            0,
+            1338,
+            6,
             "IMAGE"
         ]
     ],
@@ -927,8 +919,8 @@
             "id": 2,
             "title": "LTXV",
             "bounding": [
-                29.26668930053711,
-                1843.7327880859375,
+                -91.84366607666016,
+                1836.002197265625,
                 2761.03759765625,
                 929.5999755859375
             ],
@@ -942,8 +934,8 @@
         "ds": {
             "scale": 0.6209213230591556,
             "offset": [
-                -364.18410644035305,
-                -1909.5380094705058
+                125.03920277343835,
+                -1824.8052822498096
             ]
         },
         "frontendVersion": "1.18.0",
