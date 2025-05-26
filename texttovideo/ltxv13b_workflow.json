@@ -1,8 +1,8 @@
 {
     "id": "394ed254-7306-42a2-9ae6-aa880ce4456d",
     "revision": 0,
-    "last_node_id": 1934,
-    "last_link_id": 5498,
+    "last_node_id": 1937,
+    "last_link_id": 5501,
     "nodes": [
         {
             "id": 6,
@@ -16,13 +16,21 @@
                 204.2556610107422
             ],
             "flags": {},
-            "order": 6,
+            "order": 10,
             "mode": 0,
             "inputs": [
                 {
                     "name": "clip",
                     "type": "CLIP",
                     "link": 74
+                },
+                {
+                    "name": "text",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "text"
+                    },
+                    "link": 5499
                 }
             ],
             "outputs": [
@@ -42,7 +50,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "Create a short video of a tense samurai confrontation in heavy rain. A lone figure in a kimono holding a drawn katana faces a group of armored samurai, some on horseback, in a dark, misty setting with tall structures in the background. Emphasize the falling rain, water dripping from the katana, and the subtle movements of the characters as they prepare for battle, maintaining the blue-toned, atmospheric mood of the scene"
+                ""
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -172,7 +180,7 @@
                 78
             ],
             "flags": {},
-            "order": 10,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -225,7 +233,7 @@
                 46
             ],
             "flags": {},
-            "order": 13,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
@@ -267,7 +275,7 @@
                 346
             ],
             "flags": {},
-            "order": 12,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -304,7 +312,7 @@
                     "name": "optional_cond_images",
                     "shape": 7,
                     "type": "IMAGE",
-                    "link": 5498
+                    "link": 5500
                 }
             ],
             "outputs": [
@@ -499,7 +507,7 @@
                 262
             ],
             "flags": {},
-            "order": 11,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -561,7 +569,7 @@
                 26
             ],
             "flags": {},
-            "order": 14,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -575,7 +583,7 @@
                     "name": "output",
                     "type": "*",
                     "links": [
-                        5497
+                        5501
                     ]
                 }
             ],
@@ -635,93 +643,15 @@
             ]
         },
         {
-            "id": 1933,
-            "type": "VHS_VideoCombine",
+            "id": 1935,
+            "type": "FSLoadText",
             "pos": [
-                2092.743408203125,
-                2032.757568359375
+                -42.32229232788086,
+                2457.425537109375
             ],
             "size": [
-                471.0374755859375,
-                334
-            ],
-            "flags": {},
-            "order": 15,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 5497
-                },
-                {
-                    "name": "audio",
-                    "shape": 7,
-                    "type": "AUDIO",
-                    "link": null
-                },
-                {
-                    "name": "meta_batch",
-                    "shape": 7,
-                    "type": "VHS_BatchManager",
-                    "link": null
-                },
-                {
-                    "name": "vae",
-                    "shape": 7,
-                    "type": "VAE",
-                    "link": null
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "Filenames",
-                    "type": "VHS_FILENAMES",
-                    "links": null
-                }
-            ],
-            "properties": {
-                "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
-                "ver": "a7ce59e381934733bfae03b1be029756d6ce936d",
-                "Node name for S&R": "VHS_VideoCombine",
-                "cnr_id": "comfyui-videohelpersuite"
-            },
-            "widgets_values": {
-                "frame_rate": 24,
-                "loop_count": 0,
-                "filename_prefix": "ltxv",
-                "format": "video/h264-mp4",
-                "pix_fmt": "yuv420p",
-                "crf": 19,
-                "save_metadata": true,
-                "trim_to_audio": false,
-                "pingpong": false,
-                "save_output": true,
-                "videopreview": {
-                    "hidden": false,
-                    "paused": false,
-                    "params": {
-                        "filename": "ltxv_00056.mp4",
-                        "subfolder": "",
-                        "type": "output",
-                        "format": "video/h264-mp4",
-                        "frame_rate": 24,
-                        "workflow": "ltxv_00056.png",
-                        "fullpath": "D:\\ComfyUI\\ComfyUI_windows_portable\\ComfyUI\\output\\ltxv_00056.mp4"
-                    }
-                }
-            }
-        },
-        {
-            "id": 1934,
-            "type": "LoadImage",
-            "pos": [
-                348.6004638671875,
-                2454.419189453125
-            ],
-            "size": [
-                274.080078125,
-                314
+                400,
+                200
             ],
             "flags": {},
             "order": 5,
@@ -729,26 +659,96 @@
             "inputs": [],
             "outputs": [
                 {
-                    "name": "IMAGE",
+                    "name": "text",
+                    "type": "STRING",
+                    "links": [
+                        5499
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "FlowScale-AI/flowscale-nodes",
+                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
+                "Node name for S&R": "FSLoadText"
+            },
+            "widgets_values": [
+                "",
+                "Input Text"
+            ]
+        },
+        {
+            "id": 1936,
+            "type": "FSLoadImage",
+            "pos": [
+                456.05731201171875,
+                2477.629638671875
+            ],
+            "size": [
+                270,
+                318
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "image",
                     "type": "IMAGE",
                     "links": [
-                        5498
+                        5500
                     ]
-                },
+                }
+            ],
+            "properties": {
+                "aux_id": "FlowScale-AI/flowscale-nodes",
+                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
+                "Node name for S&R": "FSLoadImage"
+            },
+            "widgets_values": [
+                "example.png",
+                "image",
+                "Input Image"
+            ]
+        },
+        {
+            "id": 1937,
+            "type": "FSSaveVideo",
+            "pos": [
+                2191.89404296875,
+                2088.178955078125
+            ],
+            "size": [
+                271.3863220214844,
+                130
+            ],
+            "flags": {},
+            "order": 16,
+            "mode": 0,
+            "inputs": [
                 {
-                    "name": "MASK",
-                    "type": "MASK",
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 5501
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "video_path",
+                    "type": "STRING",
                     "links": null
                 }
             ],
             "properties": {
-                "cnr_id": "comfy-core",
-                "ver": "0.3.30",
-                "Node name for S&R": "LoadImage"
+                "aux_id": "FlowScale-AI/flowscale-nodes",
+                "ver": "487cc1bcdd39997c0db5a2948bc4641d3ee44ca1",
+                "Node name for S&R": "FSSaveVideo"
             },
             "widgets_values": [
-                "example.png",
-                "image"
+                "FlowScale",
+                24,
+                100,
+                "Output Video"
             ]
         }
     ],
@@ -898,19 +898,27 @@
             "MODEL"
         ],
         [
-            5497,
-            1896,
+            5499,
+            1935,
             0,
-            1933,
-            0,
-            "IMAGE"
+            6,
+            1,
+            "STRING"
         ],
         [
-            5498,
-            1934,
+            5500,
+            1936,
             0,
             1338,
             6,
+            "IMAGE"
+        ],
+        [
+            5501,
+            1896,
+            0,
+            1937,
+            0,
             "IMAGE"
         ]
     ],
@@ -932,10 +940,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.7513148009015781,
+            "scale": 0.6209213230591553,
             "offset": [
-                216.27593513359483,
-                -1910.838552267742
+                145.24870807794213,
+                -1840.5556255796782
             ]
         },
         "frontendVersion": "1.18.0",
