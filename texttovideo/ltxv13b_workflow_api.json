@@ -218,31 +218,6 @@
             "title": "Load Checkpoint"
         }
     },
-    "1919": {
-        "inputs": {
-            "frame_rate": 24,
-            "loop_count": 0,
-            "filename_prefix": [
-                "1926",
-                0
-            ],
-            "format": "video/h264-mp4",
-            "pix_fmt": "yuv420p",
-            "crf": 19,
-            "save_metadata": true,
-            "trim_to_audio": false,
-            "pingpong": false,
-            "save_output": true,
-            "images": [
-                "1896",
-                0
-            ]
-        },
-        "class_type": "VHS_VideoCombine",
-        "_meta": {
-            "title": "Video Combine 🎥🅥🅗🅢"
-        }
-    },
     "1924": {
         "inputs": {
             "default_value": "",
@@ -263,12 +238,16 @@
             "title": "[FS]⚡Load Image (Input)"
         }
     },
-    "1926": {
+    "1927": {
         "inputs": {
             "filename_prefix": "FlowScale",
             "fps": 24,
-            "quality": 95,
-            "label": "Output Video"
+            "quality": 100,
+            "label": "Output Video",
+            "images": [
+                "1896",
+                0
+            ]
         },
         "class_type": "FSSaveVideo",
         "_meta": {
