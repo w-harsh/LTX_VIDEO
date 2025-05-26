@@ -10,7 +10,7 @@ workflows:
   - id: 8n3z9a40nl
     name: ltxv13b_workflow_api.json
     file: texttovideo/ltxv13b_workflow_api.json
-    version: 20
+    version: 21
     description: ''
     inputs:
       - path: 1924.inputs.default_value
@@ -47,7 +47,7 @@ normal_workflows:
   - id: bxodk8s0jfo
     name: ltxv13b_workflow.json
     file: texttovideo/ltxv13b_workflow.json
-    version: 20
+    version: 21
   - id: fl5fazrfop5
     name: ltxv_13b_0.9.7-fp8_i2v_extend_landscape_768x512px.json
     file: texttovideo/ltxv_13b_0.9.7-fp8_i2v_extend_landscape_768x512px.json
