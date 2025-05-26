@@ -39,6 +39,10 @@ workflows:
         demo_type: video
     skip_preprocess: true
     advancedConfig: false
+  - id: czuw5zpydtc
+    name: ltxv13b_workflow.json
+    description: ''
+    file: texttovideo/ltxv13b_workflow.json
 normal_workflows:
   - id: bxodk8s0jfo
     name: ltxv13b_workflow.json
