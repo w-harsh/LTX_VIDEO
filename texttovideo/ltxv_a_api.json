@@ -203,7 +203,7 @@
     },
     "23": {
         "inputs": {
-            "default_value": "",
+            "default_value": "close up on the rabbit as it is speaking ",
             "label": "Input Text"
         },
         "class_type": "FSLoadText",
@@ -260,7 +260,7 @@
     "30": {
         "inputs": {
             "mode": "normal",
-            "fps": 24.5,
+            "fps": 24,
             "silent_padding_sec": 0.5,
             "images": [
                 "29",
