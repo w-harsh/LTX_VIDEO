@@ -2,7 +2,7 @@
     "id": "fcc5c2dc-774a-43c1-b441-956899025913",
     "revision": 0,
     "last_node_id": 33,
-    "last_link_id": 44,
+    "last_link_id": 48,
     "nodes": [
         {
             "id": 10,
@@ -16,7 +16,7 @@
                 204.2556610107422
             ],
             "flags": {},
-            "order": 10,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -339,7 +339,7 @@
                 130
             ],
             "flags": {},
-            "order": 11,
+            "order": 10,
             "mode": 0,
             "inputs": [
                 {
@@ -530,7 +530,7 @@
                     "name": "output",
                     "type": "*",
                     "links": [
-                        42
+                        47
                     ]
                 }
             ],
@@ -554,7 +554,7 @@
                 98
             ],
             "flags": {},
-            "order": 6,
+            "order": 4,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -601,7 +601,7 @@
                 200
             ],
             "flags": {},
-            "order": 4,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -619,7 +619,7 @@
                 "Node name for S&R": "FSLoadText"
             },
             "widgets_values": [
-                "close up on the rabbit as it is speaking ",
+                "rabbit is  speaking ",
                 "Input Text"
             ]
         },
@@ -712,59 +712,6 @@
             ]
         },
         {
-            "id": 30,
-            "type": "VideoLengthAdjuster",
-            "pos": [
-                2160.651611328125,
-                145.69729614257812
-            ],
-            "size": [
-                270,
-                126
-            ],
-            "flags": {},
-            "order": 17,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 42
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "link": 43
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "links": [
-                        35
-                    ]
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "links": [
-                        41
-                    ]
-                }
-            ],
-            "properties": {
-                "aux_id": "ShmuelRonen/ComfyUI-LatentSyncWrapper",
-                "ver": "556b673f82a0a6c38c82344332d33c98d8f30feb",
-                "Node name for S&R": "VideoLengthAdjuster"
-            },
-            "widgets_values": [
-                "normal",
-                24,
-                0.5
-            ]
-        },
-        {
             "id": 31,
             "type": "FL_ChatterboxTTS",
             "pos": [
@@ -791,7 +738,7 @@
                     "name": "audio",
                     "type": "AUDIO",
                     "links": [
-                        43
+                        48
                     ]
                 },
                 {
@@ -806,7 +753,7 @@
                 "Node name for S&R": "FL_ChatterboxTTS"
             },
             "widgets_values": [
-                "Hello, this is a test.",
+                "Good morning, welcome to the daily catch-up I hope all your tasks are completed",
                 0.5,
                 0.5,
                 0.8,
@@ -817,84 +764,30 @@
             "bgcolor": "#4F0074"
         },
         {
-            "id": 32,
-            "type": "LatentSyncNode",
-            "pos": [
-                2578.5771484375,
-                136.0675048828125
-            ],
-            "size": [
-                270,
-                150
-            ],
-            "flags": {},
-            "order": 18,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 35
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "link": 41
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "links": [
-                        40
-                    ]
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "links": [
-                        44
-                    ]
-                }
-            ],
-            "properties": {
-                "aux_id": "ShmuelRonen/ComfyUI-LatentSyncWrapper",
-                "ver": "556b673f82a0a6c38c82344332d33c98d8f30feb",
-                "Node name for S&R": "LatentSyncNode"
-            },
-            "widgets_values": [
-                1008,
-                "randomize",
-                1.5,
-                20
-            ]
-        },
-        {
             "id": 33,
             "type": "VHS_VideoCombine",
             "pos": [
-                2664.392822265625,
-                403.0298767089844
+                2506.802734375,
+                113.4042739868164
             ],
             "size": [
                 214.7587890625,
-                334
+                477.8392028808594
             ],
             "flags": {},
-            "order": 19,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
                     "name": "images",
                     "type": "IMAGE",
-                    "link": 40
+                    "link": 47
                 },
                 {
                     "name": "audio",
                     "shape": 7,
                     "type": "AUDIO",
-                    "link": 44
+                    "link": 48
                 },
                 {
                     "name": "meta_batch",
@@ -936,7 +829,15 @@
                 "videopreview": {
                     "hidden": false,
                     "paused": false,
-                    "params": {}
+                    "params": {
+                        "filename": "AnimateDiff_00003-audio.mp4",
+                        "subfolder": "",
+                        "type": "output",
+                        "format": "video/h264-mp4",
+                        "frame_rate": 24,
+                        "workflow": "AnimateDiff_00003.png",
+                        "fullpath": "/comfyui/output/AnimateDiff_00003-audio.mp4"
+                    }
                 }
             }
         }
@@ -1103,49 +1004,17 @@
             "CONDITIONING"
         ],
         [
-            35,
-            30,
-            0,
-            32,
-            0,
-            "IMAGE"
-        ],
-        [
-            40,
-            32,
+            47,
+            21,
             0,
             33,
             0,
             "IMAGE"
         ],
         [
-            41,
-            30,
-            1,
-            32,
-            1,
-            "AUDIO"
-        ],
-        [
-            42,
-            21,
-            0,
-            30,
-            0,
-            "IMAGE"
-        ],
-        [
-            43,
+            48,
             31,
             0,
-            30,
-            1,
-            "AUDIO"
-        ],
-        [
-            44,
-            32,
-            1,
             33,
             1,
             "AUDIO"
@@ -1169,10 +1038,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.7513148009015783,
+            "scale": 0.683013455365071,
             "offset": [
-                -1228.098506502475,
-                12.42197013023808
+                -1069.259318975988,
+                -149.68831297362476
             ]
         },
         "frontendVersion": "1.18.0",
