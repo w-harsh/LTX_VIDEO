@@ -2,7 +2,7 @@
     "id": "fcc5c2dc-774a-43c1-b441-956899025913",
     "revision": 0,
     "last_node_id": 33,
-    "last_link_id": 37,
+    "last_link_id": 40,
     "nodes": [
         {
             "id": 10,
@@ -16,7 +16,7 @@
                 204.2556610107422
             ],
             "flags": {},
-            "order": 11,
+            "order": 10,
             "mode": 0,
             "inputs": [
                 {
@@ -339,7 +339,7 @@
                 130
             ],
             "flags": {},
-            "order": 10,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -554,7 +554,7 @@
                 98
             ],
             "flags": {},
-            "order": 4,
+            "order": 7,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -576,7 +576,8 @@
                     "type": "VAE",
                     "links": [
                         16,
-                        22
+                        22,
+                        39
                     ]
                 }
             ],
@@ -601,7 +602,7 @@
                 200
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -635,7 +636,7 @@
                 318
             ],
             "flags": {},
-            "order": 7,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -736,7 +737,7 @@
                     "name": "vae",
                     "shape": 7,
                     "type": "VAE",
-                    "link": null
+                    "link": 39
                 },
                 {
                     "name": "video",
@@ -749,8 +750,8 @@
             ],
             "outputs": [
                 {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
+                    "name": "LATENT",
+                    "type": "LATENT",
                     "links": [
                         33
                     ]
@@ -866,7 +867,7 @@
                 228
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [
                 {
@@ -938,7 +939,7 @@
                     "name": "images",
                     "type": "IMAGE",
                     "links": [
-                        36
+                        40
                     ]
                 },
                 {
@@ -977,7 +978,7 @@
                 {
                     "name": "images",
                     "type": "IMAGE",
-                    "link": 36
+                    "link": 40
                 },
                 {
                     "name": "audio",
@@ -1224,20 +1225,28 @@
             "IMAGE"
         ],
         [
-            36,
-            32,
-            0,
-            33,
-            0,
-            "IMAGE"
-        ],
-        [
             37,
             31,
             0,
             33,
             1,
             "AUDIO"
+        ],
+        [
+            39,
+            22,
+            2,
+            29,
+            1,
+            "VAE"
+        ],
+        [
+            40,
+            32,
+            0,
+            33,
+            0,
+            "IMAGE"
         ]
     ],
     "groups": [
@@ -1258,10 +1267,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.620921323059155,
+            "scale": 0.7513148009015782,
             "offset": [
-                -131.7074747867251,
-                -106.20817421033769
+                -1450.793984358509,
+                -40.903169922122295
             ]
         },
         "frontendVersion": "1.18.0",
