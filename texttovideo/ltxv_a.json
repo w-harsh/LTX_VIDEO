@@ -1010,7 +1010,7 @@
                 "Node name for S&R": "VHS_VideoCombine"
             },
             "widgets_values": {
-                "frame_rate": 8,
+                "frame_rate": 24,
                 "loop_count": 0,
                 "filename_prefix": "AnimateDiff",
                 "format": "video/h264-mp4",
@@ -1256,10 +1256,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.6830134553650711,
+            "scale": 1,
             "offset": [
-                -1047.0298491113301,
-                -107.65240202438287
+                -1969.616886426554,
+                -239.80386132604215
             ]
         },
         "frontendVersion": "1.18.0",
