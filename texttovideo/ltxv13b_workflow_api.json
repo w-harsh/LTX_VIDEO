@@ -1,12 +1,12 @@
 {
-    "6": {
+    "10": {
         "inputs": {
             "text": [
-                "1935",
+                "23",
                 0
             ],
             "clip": [
-                "38",
+                "12",
                 0
             ]
         },
@@ -15,11 +15,11 @@
             "title": "CLIP Text Encode (Positive Prompt)"
         }
     },
-    "7": {
+    "11": {
         "inputs": {
             "text": "low quality, worst quality, deformed, distorted, disfigured, motion smear, motion artifacts, fused fingers, bad anatomy, weird hand, ugly",
             "clip": [
-                "38",
+                "12",
                 0
             ]
         },
@@ -28,7 +28,7 @@
             "title": "CLIP Text Encode (Negative Prompt)"
         }
     },
-    "38": {
+    "12": {
         "inputs": {
             "clip_name": "t5xxl_fp8_e4m3fn.safetensors",
             "type": "ltxv",
@@ -39,7 +39,7 @@
             "title": "Load CLIP"
         }
     },
-    "73": {
+    "13": {
         "inputs": {
             "sampler_name": "euler_ancestral"
         },
@@ -48,31 +48,14 @@
             "title": "KSamplerSelect"
         }
     },
-    "1241": {
-        "inputs": {
-            "frame_rate": 24.000000000000004,
-            "positive": [
-                "6",
-                0
-            ],
-            "negative": [
-                "7",
-                0
-            ]
-        },
-        "class_type": "LTXVConditioning",
-        "_meta": {
-            "title": "LTXVConditioning"
-        }
-    },
-    "1335": {
+    "14": {
         "inputs": {
             "samples": [
-                "1338",
+                "15",
                 0
             ],
             "vae": [
-                "1872",
+                "17",
                 0
             ]
         },
@@ -81,7 +64,7 @@
             "title": "VAE Decode"
         }
     },
-    "1338": {
+    "15": {
         "inputs": {
             "width": 768,
             "height": 512,
@@ -92,31 +75,31 @@
             "crf": 30,
             "blur": 1,
             "model": [
-                "1908",
+                "22",
                 0
             ],
             "vae": [
-                "1908",
+                "22",
                 2
             ],
             "guider": [
-                "1887",
+                "20",
                 0
             ],
             "sampler": [
-                "73",
+                "13",
                 0
             ],
             "sigmas": [
-                "1876",
+                "19",
                 0
             ],
             "noise": [
-                "1507",
+                "16",
                 0
             ],
             "optional_cond_images": [
-                "1936",
+                "24",
                 0
             ]
         },
@@ -125,7 +108,7 @@
             "title": "🅛🅣🅧 LTXV Base Sampler"
         }
     },
-    "1507": {
+    "16": {
         "inputs": {
             "noise_seed": 2025
         },
@@ -134,13 +117,13 @@
             "title": "RandomNoise"
         }
     },
-    "1872": {
+    "17": {
         "inputs": {
             "timestep": 0.05,
             "scale": 0.025,
             "seed": 42,
             "vae": [
-                "1908",
+                "22",
                 2
             ]
         },
@@ -149,7 +132,7 @@
             "title": "🅛🅣🅧 Set VAE Decoder Noise"
         }
     },
-    "1875": {
+    "18": {
         "inputs": {
             "string": "1.0000, 0.9937, 0.9875, 0.9812, 0.9750, 0.9094, 0.7250, 0.4219, 0.0"
         },
@@ -158,10 +141,10 @@
             "title": "String to Float List"
         }
     },
-    "1876": {
+    "19": {
         "inputs": {
             "float_list": [
-                "1875",
+                "18",
                 0
             ]
         },
@@ -170,7 +153,7 @@
             "title": "Float To Sigmas"
         }
     },
-    "1887": {
+    "20": {
         "inputs": {
             "skip_steps_sigma_threshold": 0.9970000000000002,
             "cfg_star_rescale": true,
@@ -180,15 +163,15 @@
             "stg_rescale_values": "1, 1, 1, 1, 1, 1",
             "stg_layers_indices": "[25], [35], [35], [42], [42], [42]",
             "model": [
-                "1908",
+                "22",
                 0
             ],
             "positive": [
-                "1241",
+                "26",
                 0
             ],
             "negative": [
-                "1241",
+                "26",
                 1
             ]
         },
@@ -197,10 +180,10 @@
             "title": "🅛🅣🅧 STG Guider Advanced"
         }
     },
-    "1896": {
+    "21": {
         "inputs": {
             "anything": [
-                "1335",
+                "14",
                 0
             ]
         },
@@ -209,7 +192,7 @@
             "title": "Clean VRAM Used"
         }
     },
-    "1908": {
+    "22": {
         "inputs": {
             "ckpt_name": "ltxv-13b-0.9.7-distilled.safetensors"
         },
@@ -218,9 +201,9 @@
             "title": "Load Checkpoint"
         }
     },
-    "1935": {
+    "23": {
         "inputs": {
-            "default_value": "",
+            "default_value": "close up on the rabbit as it is speaking ",
             "label": "Input Text"
         },
         "class_type": "FSLoadText",
@@ -228,9 +211,9 @@
             "title": "[FS]⚡Load Text (Input)"
         }
     },
-    "1936": {
+    "24": {
         "inputs": {
-            "image": "example.png",
+            "image": "768x512px_bunny.png",
             "label": "Input Image"
         },
         "class_type": "FSLoadImage",
@@ -238,20 +221,99 @@
             "title": "[FS]⚡Load Image (Input)"
         }
     },
-    "1937": {
+    "26": {
         "inputs": {
-            "filename_prefix": "FlowScale",
-            "fps": 24,
-            "quality": 100,
-            "label": "Output Video",
-            "images": [
-                "1896",
+            "frame_rate": 24.000000000000004,
+            "positive": [
+                "10",
+                0
+            ],
+            "negative": [
+                "11",
                 0
             ]
         },
-        "class_type": "FSSaveVideo",
+        "class_type": "LTXVConditioning",
         "_meta": {
-            "title": "[FS]⚡Save Video (Output)"
+            "title": "LTXVConditioning"
+        }
+    },
+    "30": {
+        "inputs": {
+            "mode": "normal",
+            "fps": 24,
+            "silent_padding_sec": 0.5,
+            "images": [
+                "21",
+                0
+            ],
+            "audio": [
+                "31",
+                0
+            ]
+        },
+        "class_type": "VideoLengthAdjuster",
+        "_meta": {
+            "title": "Video Length Adjuster"
+        }
+    },
+    "31": {
+        "inputs": {
+            "text": "Hello, this is a test.",
+            "exaggeration": 0.5,
+            "cfg_weight": 0.5,
+            "temperature": 0.8,
+            "use_cpu": false,
+            "keep_model_loaded": false
+        },
+        "class_type": "FL_ChatterboxTTS",
+        "_meta": {
+            "title": "FL Chatterbox TTS"
+        }
+    },
+    "32": {
+        "inputs": {
+            "seed": 1335,
+            "lips_expression": 1.5,
+            "inference_steps": 20,
+            "images": [
+                "30",
+                0
+            ],
+            "audio": [
+                "30",
+                1
+            ]
+        },
+        "class_type": "LatentSyncNode",
+        "_meta": {
+            "title": "LatentSync1.5 Node"
+        }
+    },
+    "33": {
+        "inputs": {
+            "frame_rate": 24,
+            "loop_count": 0,
+            "filename_prefix": "AnimateDiff",
+            "format": "video/h264-mp4",
+            "pix_fmt": "yuv420p",
+            "crf": 19,
+            "save_metadata": true,
+            "trim_to_audio": false,
+            "pingpong": false,
+            "save_output": true,
+            "images": [
+                "32",
+                0
+            ],
+            "audio": [
+                "32",
+                1
+            ]
+        },
+        "class_type": "VHS_VideoCombine",
+        "_meta": {
+            "title": "Video Combine 🎥🅥🅗🅢"
         }
     }
 }
