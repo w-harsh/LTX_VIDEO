@@ -213,28 +213,12 @@
     },
     "24": {
         "inputs": {
-            "image": "example.png",
+            "image": "768x512px_bunny.png",
             "label": "Input Image"
         },
         "class_type": "FSLoadImage",
         "_meta": {
             "title": "[FS]⚡Load Image (Input)"
-        }
-    },
-    "25": {
-        "inputs": {
-            "filename_prefix": "FlowScale",
-            "fps": 24,
-            "quality": 100,
-            "label": "Output Video",
-            "images": [
-                "21",
-                0
-            ]
-        },
-        "class_type": "FSSaveVideo",
-        "_meta": {
-            "title": "[FS]⚡Save Video (Output)"
         }
     },
     "26": {
@@ -252,6 +236,99 @@
         "class_type": "LTXVConditioning",
         "_meta": {
             "title": "LTXVConditioning"
+        }
+    },
+    "29": {
+        "inputs": {
+            "video": [
+                "21",
+                0
+            ],
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 0,
+            "skip_first_frames": 0,
+            "select_every_nth": 1,
+            "format": "LTXV"
+        },
+        "class_type": "VHS_LoadVideoPath",
+        "_meta": {
+            "title": "Load Video (Path) 🎥🅥🅗🅢"
+        }
+    },
+    "30": {
+        "inputs": {
+            "mode": "normal",
+            "fps": 24.5,
+            "silent_padding_sec": 0.5,
+            "images": [
+                "29",
+                0
+            ],
+            "audio": [
+                "31",
+                0
+            ]
+        },
+        "class_type": "VideoLengthAdjuster",
+        "_meta": {
+            "title": "Video Length Adjuster"
+        }
+    },
+    "31": {
+        "inputs": {
+            "text": "Hello, this is a test.",
+            "exaggeration": 0.5,
+            "cfg_weight": 0.5,
+            "temperature": 0.8,
+            "use_cpu": false,
+            "keep_model_loaded": false
+        },
+        "class_type": "FL_ChatterboxTTS",
+        "_meta": {
+            "title": "FL Chatterbox TTS"
+        }
+    },
+    "32": {
+        "inputs": {
+            "seed": 1247,
+            "lips_expression": 1.5,
+            "inference_steps": 20,
+            "images": [
+                "30",
+                0
+            ]
+        },
+        "class_type": "LatentSyncNode",
+        "_meta": {
+            "title": "LatentSync1.5 Node"
+        }
+    },
+    "33": {
+        "inputs": {
+            "frame_rate": 8,
+            "loop_count": 0,
+            "filename_prefix": "AnimateDiff",
+            "format": "video/h264-mp4",
+            "pix_fmt": "yuv420p",
+            "crf": 19,
+            "save_metadata": true,
+            "trim_to_audio": false,
+            "pingpong": false,
+            "save_output": true,
+            "images": [
+                "32",
+                0
+            ],
+            "audio": [
+                "31",
+                0
+            ]
+        },
+        "class_type": "VHS_VideoCombine",
+        "_meta": {
+            "title": "Video Combine 🎥🅥🅗🅢"
         }
     }
 }
