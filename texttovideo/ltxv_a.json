@@ -2,7 +2,7 @@
     "id": "fcc5c2dc-774a-43c1-b441-956899025913",
     "revision": 0,
     "last_node_id": 33,
-    "last_link_id": 40,
+    "last_link_id": 42,
     "nodes": [
         {
             "id": 10,
@@ -508,8 +508,8 @@
             "id": 21,
             "type": "easy cleanGpuUsed",
             "pos": [
-                1807.610595703125,
-                275.9312438964844
+                1936.354736328125,
+                269.1552734375
             ],
             "size": [
                 157.38925170898438,
@@ -530,7 +530,7 @@
                     "name": "output",
                     "type": "*",
                     "links": [
-                        32
+                        42
                     ]
                 }
             ],
@@ -576,8 +576,7 @@
                     "type": "VAE",
                     "links": [
                         16,
-                        22,
-                        39
+                        22
                     ]
                 }
             ],
@@ -713,98 +712,6 @@
             ]
         },
         {
-            "id": 29,
-            "type": "VHS_LoadVideoPath",
-            "pos": [
-                2043.23388671875,
-                226.91244506835938
-            ],
-            "size": [
-                231.8896484375,
-                286
-            ],
-            "flags": {},
-            "order": 17,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "meta_batch",
-                    "shape": 7,
-                    "type": "VHS_BatchManager",
-                    "link": null
-                },
-                {
-                    "name": "vae",
-                    "shape": 7,
-                    "type": "VAE",
-                    "link": 39
-                },
-                {
-                    "name": "video",
-                    "type": "STRING",
-                    "widget": {
-                        "name": "video"
-                    },
-                    "link": 32
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "LATENT",
-                    "type": "LATENT",
-                    "links": [
-                        33
-                    ]
-                },
-                {
-                    "name": "frame_count",
-                    "type": "INT",
-                    "links": null
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "links": null
-                },
-                {
-                    "name": "video_info",
-                    "type": "VHS_VIDEOINFO",
-                    "links": null
-                }
-            ],
-            "properties": {
-                "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
-                "ver": "a7ce59e381934733bfae03b1be029756d6ce936d",
-                "Node name for S&R": "VHS_LoadVideoPath",
-                "cnr_id": "comfyui-videohelpersuite"
-            },
-            "widgets_values": {
-                "video": "",
-                "force_rate": 0,
-                "custom_width": 0,
-                "custom_height": 0,
-                "frame_load_cap": 0,
-                "skip_first_frames": 0,
-                "select_every_nth": 1,
-                "format": "LTXV",
-                "videopreview": {
-                    "hidden": false,
-                    "paused": false,
-                    "params": {
-                        "filename": "",
-                        "type": "path",
-                        "format": "video/",
-                        "force_rate": 0,
-                        "custom_width": 0,
-                        "custom_height": 0,
-                        "frame_load_cap": 0,
-                        "skip_first_frames": 0,
-                        "select_every_nth": 1
-                    }
-                }
-            }
-        },
-        {
             "id": 30,
             "type": "VideoLengthAdjuster",
             "pos": [
@@ -816,13 +723,13 @@
                 126
             ],
             "flags": {},
-            "order": 18,
+            "order": 17,
             "mode": 0,
             "inputs": [
                 {
                     "name": "images",
                     "type": "IMAGE",
-                    "link": 33
+                    "link": 42
                 },
                 {
                     "name": "audio",
@@ -841,7 +748,9 @@
                 {
                     "name": "audio",
                     "type": "AUDIO",
-                    "links": null
+                    "links": [
+                        41
+                    ]
                 }
             ],
             "properties": {
@@ -920,7 +829,7 @@
                 150
             ],
             "flags": {},
-            "order": 19,
+            "order": 18,
             "mode": 0,
             "inputs": [
                 {
@@ -931,7 +840,7 @@
                 {
                     "name": "audio",
                     "type": "AUDIO",
-                    "link": null
+                    "link": 41
                 }
             ],
             "outputs": [
@@ -954,7 +863,7 @@
                 "Node name for S&R": "LatentSyncNode"
             },
             "widgets_values": [
-                1247,
+                1023,
                 "randomize",
                 1.5,
                 20
@@ -972,7 +881,7 @@
                 334
             ],
             "flags": {},
-            "order": 20,
+            "order": 19,
             "mode": 0,
             "inputs": [
                 {
@@ -1193,22 +1102,6 @@
             "CONDITIONING"
         ],
         [
-            32,
-            21,
-            0,
-            29,
-            2,
-            "STRING"
-        ],
-        [
-            33,
-            29,
-            0,
-            30,
-            0,
-            "IMAGE"
-        ],
-        [
             34,
             31,
             0,
@@ -1233,18 +1126,26 @@
             "AUDIO"
         ],
         [
-            39,
-            22,
-            2,
-            29,
-            1,
-            "VAE"
-        ],
-        [
             40,
             32,
             0,
             33,
+            0,
+            "IMAGE"
+        ],
+        [
+            41,
+            30,
+            1,
+            32,
+            1,
+            "AUDIO"
+        ],
+        [
+            42,
+            21,
+            0,
+            30,
             0,
             "IMAGE"
         ]
@@ -1267,10 +1168,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.7513148009015782,
+            "scale": 0.8264462809917362,
             "offset": [
-                -1450.793984358509,
-                -40.903169922122295
+                -1453.327975923862,
+                -60.83144205543087
             ]
         },
         "frontendVersion": "1.18.0",
