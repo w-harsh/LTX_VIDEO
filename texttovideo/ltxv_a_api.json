@@ -273,7 +273,7 @@
     },
     "32": {
         "inputs": {
-            "seed": 1023,
+            "seed": 1008,
             "lips_expression": 1.5,
             "inference_steps": 20,
             "images": [
@@ -307,8 +307,8 @@
                 0
             ],
             "audio": [
-                "31",
-                0
+                "32",
+                1
             ]
         },
         "class_type": "VHS_VideoCombine",
