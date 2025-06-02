@@ -238,36 +238,13 @@
             "title": "LTXVConditioning"
         }
     },
-    "29": {
-        "inputs": {
-            "video": [
-                "21",
-                0
-            ],
-            "force_rate": 0,
-            "custom_width": 0,
-            "custom_height": 0,
-            "frame_load_cap": 0,
-            "skip_first_frames": 0,
-            "select_every_nth": 1,
-            "format": "LTXV",
-            "vae": [
-                "22",
-                2
-            ]
-        },
-        "class_type": "VHS_LoadVideoPath",
-        "_meta": {
-            "title": "Load Video (Path) 🎥🅥🅗🅢"
-        }
-    },
     "30": {
         "inputs": {
             "mode": "normal",
             "fps": 24,
             "silent_padding_sec": 0.5,
             "images": [
-                "29",
+                "21",
                 0
             ],
             "audio": [
@@ -296,12 +273,16 @@
     },
     "32": {
         "inputs": {
-            "seed": 1247,
+            "seed": 1023,
             "lips_expression": 1.5,
             "inference_steps": 20,
             "images": [
                 "30",
                 0
+            ],
+            "audio": [
+                "30",
+                1
             ]
         },
         "class_type": "LatentSyncNode",
