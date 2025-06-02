@@ -46,9 +46,23 @@ workflows:
   - id: 5mqqovn0azs
     name: ltxv_a_api.json
     file: texttovideo/ltxv_a_api.json
-    version: 0
+    version: 1
     description: ''
-    inputs: []
+    inputs:
+      - path: 23.inputs.default_value
+        label: Input Text
+        parameter_name: default_value_58204
+        type: string
+        demo_type: text
+        category: input
+        randomize: false
+      - path: 24.inputs.image
+        label: Input Image
+        parameter_name: image_48694
+        type: string
+        demo_type: image
+        category: input
+        randomize: false
     outputs: []
     skip_preprocess: true
     advancedConfig: false
@@ -64,4 +78,4 @@ normal_workflows:
   - id: vm9k1kd8t7
     name: ltxv_a.json
     file: texttovideo/ltxv_a.json
-    version: 0
+    version: 1
