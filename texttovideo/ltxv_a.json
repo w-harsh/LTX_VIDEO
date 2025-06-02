@@ -272,10 +272,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "ComfyUI-LTXVideo",
+                "aux_id": "Lightricks/ComfyUI-LTXVideo",
                 "ver": "6e9e6de05624b0aab09b81a2f4a5f473fa97988a",
                 "Node name for S&R": "LTXVBaseSampler",
-                "aux_id": "Lightricks/ComfyUI-LTXVideo"
+                "cnr_id": "ComfyUI-LTXVideo"
             },
             "widgets_values": [
                 768,
@@ -358,10 +358,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "ComfyUI-LTXVideo",
+                "aux_id": "Lightricks/ComfyUI-LTXVideo",
                 "ver": "6e9e6de05624b0aab09b81a2f4a5f473fa97988a",
                 "Node name for S&R": "Set VAE Decoder Noise",
-                "aux_id": "Lightricks/ComfyUI-LTXVideo"
+                "cnr_id": "ComfyUI-LTXVideo"
             },
             "widgets_values": [
                 0.05,
@@ -395,10 +395,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-kjnodes",
+                "aux_id": "kijai/ComfyUI-KJNodes",
                 "ver": "0addfc6101f7a834c7fb6e0a1b26529360ab5350",
                 "Node name for S&R": "StringToFloatList",
-                "aux_id": "kijai/ComfyUI-KJNodes"
+                "cnr_id": "comfyui-kjnodes"
             },
             "widgets_values": [
                 "1.0000, 0.9937, 0.9875, 0.9812, 0.9750, 0.9094, 0.7250, 0.4219, 0.0"
@@ -435,10 +435,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-kjnodes",
+                "aux_id": "kijai/ComfyUI-KJNodes",
                 "ver": "1.1.0",
                 "Node name for S&R": "FloatToSigmas",
-                "aux_id": "kijai/ComfyUI-KJNodes"
+                "cnr_id": "comfyui-kjnodes"
             },
             "widgets_values": []
         },
@@ -489,10 +489,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "ComfyUI-LTXVideo",
+                "aux_id": "Lightricks/ComfyUI-LTXVideo",
                 "ver": "6e9e6de05624b0aab09b81a2f4a5f473fa97988a",
                 "Node name for S&R": "STGGuiderAdvanced",
-                "aux_id": "Lightricks/ComfyUI-LTXVideo"
+                "cnr_id": "ComfyUI-LTXVideo"
             },
             "widgets_values": [
                 0.9970000000000002,
@@ -535,10 +535,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-easy-use",
+                "aux_id": "yolain/ComfyUI-Easy-Use",
                 "ver": "d287e28e5c3051d037cca4318305d0ed827420b4",
                 "Node name for S&R": "easy cleanGpuUsed",
-                "aux_id": "yolain/ComfyUI-Easy-Use"
+                "cnr_id": "comfyui-easy-use"
             },
             "widgets_values": []
         },
@@ -601,7 +601,7 @@
                 200
             ],
             "flags": {},
-            "order": 5,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -619,7 +619,7 @@
                 "Node name for S&R": "FSLoadText"
             },
             "widgets_values": [
-                "",
+                "close up on the rabbit as it is speaking ",
                 "Input Text"
             ]
         },
@@ -772,9 +772,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-videohelpersuite",
+                "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
                 "ver": "a7ce59e381934733bfae03b1be029756d6ce936d",
-                "Node name for S&R": "VHS_LoadVideoPath"
+                "Node name for S&R": "VHS_LoadVideoPath",
+                "cnr_id": "comfyui-videohelpersuite"
             },
             "widgets_values": {
                 "video": "",
@@ -849,7 +850,7 @@
             },
             "widgets_values": [
                 "normal",
-                24.5,
+                24,
                 0.5
             ]
         },
@@ -865,7 +866,7 @@
                 228
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [
                 {
@@ -1005,9 +1006,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-videohelpersuite",
+                "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
                 "ver": "a7ce59e381934733bfae03b1be029756d6ce936d",
-                "Node name for S&R": "VHS_VideoCombine"
+                "Node name for S&R": "VHS_VideoCombine",
+                "cnr_id": "comfyui-videohelpersuite"
             },
             "widgets_values": {
                 "frame_rate": 24,
@@ -1256,10 +1258,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 1,
+            "scale": 0.620921323059155,
             "offset": [
-                -1969.616886426554,
-                -239.80386132604215
+                -131.7074747867251,
+                -106.20817421033769
             ]
         },
         "frontendVersion": "1.18.0",
