@@ -250,7 +250,11 @@
             "frame_load_cap": 0,
             "skip_first_frames": 0,
             "select_every_nth": 1,
-            "format": "LTXV"
+            "format": "LTXV",
+            "vae": [
+                "22",
+                2
+            ]
         },
         "class_type": "VHS_LoadVideoPath",
         "_meta": {
