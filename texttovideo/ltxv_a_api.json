@@ -203,7 +203,7 @@
     },
     "23": {
         "inputs": {
-            "default_value": "close up on the rabbit as it is speaking ",
+            "default_value": "rabbit is  speaking ",
             "label": "Input Text"
         },
         "class_type": "FSLoadText",
@@ -238,28 +238,9 @@
             "title": "LTXVConditioning"
         }
     },
-    "30": {
-        "inputs": {
-            "mode": "normal",
-            "fps": 24,
-            "silent_padding_sec": 0.5,
-            "images": [
-                "21",
-                0
-            ],
-            "audio": [
-                "31",
-                0
-            ]
-        },
-        "class_type": "VideoLengthAdjuster",
-        "_meta": {
-            "title": "Video Length Adjuster"
-        }
-    },
     "31": {
         "inputs": {
-            "text": "Hello, this is a test.",
+            "text": "Good morning, welcome to the daily catch-up I hope all your tasks are completed",
             "exaggeration": 0.5,
             "cfg_weight": 0.5,
             "temperature": 0.8,
@@ -269,25 +250,6 @@
         "class_type": "FL_ChatterboxTTS",
         "_meta": {
             "title": "FL Chatterbox TTS"
-        }
-    },
-    "32": {
-        "inputs": {
-            "seed": 1008,
-            "lips_expression": 1.5,
-            "inference_steps": 20,
-            "images": [
-                "30",
-                0
-            ],
-            "audio": [
-                "30",
-                1
-            ]
-        },
-        "class_type": "LatentSyncNode",
-        "_meta": {
-            "title": "LatentSync1.5 Node"
         }
     },
     "33": {
@@ -303,12 +265,12 @@
             "pingpong": false,
             "save_output": true,
             "images": [
-                "32",
+                "21",
                 0
             ],
             "audio": [
-                "32",
-                1
+                "31",
+                0
             ]
         },
         "class_type": "VHS_VideoCombine",
