@@ -2,7 +2,7 @@
     "id": "fcc5c2dc-774a-43c1-b441-956899025913",
     "revision": 0,
     "last_node_id": 36,
-    "last_link_id": 54,
+    "last_link_id": 58,
     "nodes": [
         {
             "id": 10,
@@ -530,7 +530,7 @@
                     "name": "output",
                     "type": "*",
                     "links": [
-                        49
+                        57
                     ]
                 }
             ],
@@ -738,7 +738,7 @@
                     "name": "audio",
                     "type": "AUDIO",
                     "links": [
-                        50
+                        58
                     ]
                 },
                 {
@@ -764,15 +764,15 @@
             "bgcolor": "#4F0074"
         },
         {
-            "id": 34,
-            "type": "VideoLengthAdjuster",
+            "id": 36,
+            "type": "VHS_VideoCombine",
             "pos": [
-                2346.541748046875,
-                150.2740020751953
+                2617.1044921875,
+                119.82072448730469
             ],
             "size": [
-                270,
-                126
+                214.7587890625,
+                334
             ],
             "flags": {},
             "order": 17,
@@ -781,120 +781,13 @@
                 {
                     "name": "images",
                     "type": "IMAGE",
-                    "link": 49
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "link": 50
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "links": [
-                        51
-                    ]
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "links": [
-                        52
-                    ]
-                }
-            ],
-            "properties": {
-                "aux_id": "ShmuelRonen/ComfyUI-LatentSyncWrapper",
-                "ver": "556b673f82a0a6c38c82344332d33c98d8f30feb",
-                "Node name for S&R": "VideoLengthAdjuster"
-            },
-            "widgets_values": [
-                "normal",
-                24,
-                0.5
-            ]
-        },
-        {
-            "id": 35,
-            "type": "LatentSyncNode",
-            "pos": [
-                2756.4873046875,
-                139.73251342773438
-            ],
-            "size": [
-                270,
-                150
-            ],
-            "flags": {},
-            "order": 18,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 51
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "link": 52
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "links": [
-                        53
-                    ]
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "links": [
-                        54
-                    ]
-                }
-            ],
-            "properties": {
-                "aux_id": "ShmuelRonen/ComfyUI-LatentSyncWrapper",
-                "ver": "556b673f82a0a6c38c82344332d33c98d8f30feb",
-                "Node name for S&R": "LatentSyncNode"
-            },
-            "widgets_values": [
-                1247,
-                "randomize",
-                1.5,
-                20
-            ]
-        },
-        {
-            "id": 36,
-            "type": "VHS_VideoCombine",
-            "pos": [
-                2796.311279296875,
-                422.0109558105469
-            ],
-            "size": [
-                214.7587890625,
-                334
-            ],
-            "flags": {},
-            "order": 19,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 53
+                    "link": 57
                 },
                 {
                     "name": "audio",
                     "shape": 7,
                     "type": "AUDIO",
-                    "link": 54
+                    "link": 58
                 },
                 {
                     "name": "meta_batch",
@@ -1102,49 +995,17 @@
             "CONDITIONING"
         ],
         [
-            49,
+            57,
             21,
-            0,
-            34,
-            0,
-            "IMAGE"
-        ],
-        [
-            50,
-            31,
-            0,
-            34,
-            1,
-            "AUDIO"
-        ],
-        [
-            51,
-            34,
-            0,
-            35,
-            0,
-            "IMAGE"
-        ],
-        [
-            52,
-            34,
-            1,
-            35,
-            1,
-            "AUDIO"
-        ],
-        [
-            53,
-            35,
             0,
             36,
             0,
             "IMAGE"
         ],
         [
-            54,
-            35,
-            1,
+            58,
+            31,
+            0,
             36,
             1,
             "AUDIO"
@@ -1168,10 +1029,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.683013455365071,
+            "scale": 0.5131581182307069,
             "offset": [
-                -1096.7843811036737,
-                21.611342345589012
+                -624.7673257036736,
+                214.48894814558898
             ]
         },
         "frontendVersion": "1.18.0",
