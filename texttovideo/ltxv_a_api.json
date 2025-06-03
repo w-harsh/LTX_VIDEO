@@ -203,7 +203,7 @@
     },
     "23": {
         "inputs": {
-            "default_value": "rabbit is  speaking ",
+            "default_value": "rabbit is talking",
             "label": "Input Text"
         },
         "class_type": "FSLoadText",
