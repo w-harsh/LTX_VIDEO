@@ -601,7 +601,7 @@
                 200
             ],
             "flags": {},
-            "order": 5,
+            "order": 7,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -619,7 +619,7 @@
                 "Node name for S&R": "FSLoadText"
             },
             "widgets_values": [
-                "rabbit is  speaking ",
+                "rabbit is talking",
                 "Input Text"
             ]
         },
@@ -723,7 +723,7 @@
                 228
             ],
             "flags": {},
-            "order": 7,
+            "order": 5,
             "mode": 0,
             "inputs": [
                 {
@@ -772,7 +772,7 @@
             ],
             "size": [
                 214.7587890625,
-                334
+                477.8392028808594
             ],
             "flags": {},
             "order": 17,
@@ -828,7 +828,15 @@
                 "videopreview": {
                     "hidden": false,
                     "paused": false,
-                    "params": {}
+                    "params": {
+                        "filename": "AnimateDiff_00001-audio.mp4",
+                        "subfolder": "",
+                        "type": "output",
+                        "format": "video/h264-mp4",
+                        "frame_rate": 24,
+                        "workflow": "AnimateDiff_00001.png",
+                        "fullpath": "/comfyui/output/AnimateDiff_00001-audio.mp4"
+                    }
                 }
             }
         }
@@ -1029,10 +1037,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.5131581182307069,
+            "scale": 0.6209213230591555,
             "offset": [
-                -624.7673257036736,
-                214.48894814558898
+                681.0120414720212,
+                -192.19631909916836
             ]
         },
         "frontendVersion": "1.18.0",
