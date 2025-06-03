@@ -252,7 +252,45 @@
             "title": "FL Chatterbox TTS"
         }
     },
-    "33": {
+    "34": {
+        "inputs": {
+            "mode": "normal",
+            "fps": 24,
+            "silent_padding_sec": 0.5,
+            "images": [
+                "21",
+                0
+            ],
+            "audio": [
+                "31",
+                0
+            ]
+        },
+        "class_type": "VideoLengthAdjuster",
+        "_meta": {
+            "title": "Video Length Adjuster"
+        }
+    },
+    "35": {
+        "inputs": {
+            "seed": 1247,
+            "lips_expression": 1.5,
+            "inference_steps": 20,
+            "images": [
+                "34",
+                0
+            ],
+            "audio": [
+                "34",
+                1
+            ]
+        },
+        "class_type": "LatentSyncNode",
+        "_meta": {
+            "title": "LatentSync1.5 Node"
+        }
+    },
+    "36": {
         "inputs": {
             "frame_rate": 24,
             "loop_count": 0,
@@ -265,12 +303,12 @@
             "pingpong": false,
             "save_output": true,
             "images": [
-                "21",
+                "35",
                 0
             ],
             "audio": [
-                "31",
-                0
+                "35",
+                1
             ]
         },
         "class_type": "VHS_VideoCombine",
