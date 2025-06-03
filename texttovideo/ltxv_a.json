@@ -1,8 +1,8 @@
 {
     "id": "fcc5c2dc-774a-43c1-b441-956899025913",
     "revision": 0,
-    "last_node_id": 33,
-    "last_link_id": 48,
+    "last_node_id": 36,
+    "last_link_id": 54,
     "nodes": [
         {
             "id": 10,
@@ -530,7 +530,7 @@
                     "name": "output",
                     "type": "*",
                     "links": [
-                        47
+                        49
                     ]
                 }
             ],
@@ -601,7 +601,7 @@
                 200
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -635,7 +635,7 @@
                 318
             ],
             "flags": {},
-            "order": 5,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -738,7 +738,7 @@
                     "name": "audio",
                     "type": "AUDIO",
                     "links": [
-                        48
+                        50
                     ]
                 },
                 {
@@ -764,15 +764,15 @@
             "bgcolor": "#4F0074"
         },
         {
-            "id": 33,
-            "type": "VHS_VideoCombine",
+            "id": 34,
+            "type": "VideoLengthAdjuster",
             "pos": [
-                2506.802734375,
-                113.4042739868164
+                2346.541748046875,
+                150.2740020751953
             ],
             "size": [
-                214.7587890625,
-                477.8392028808594
+                270,
+                126
             ],
             "flags": {},
             "order": 17,
@@ -781,13 +781,120 @@
                 {
                     "name": "images",
                     "type": "IMAGE",
-                    "link": 47
+                    "link": 49
+                },
+                {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 50
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "links": [
+                        51
+                    ]
+                },
+                {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                        52
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "ShmuelRonen/ComfyUI-LatentSyncWrapper",
+                "ver": "556b673f82a0a6c38c82344332d33c98d8f30feb",
+                "Node name for S&R": "VideoLengthAdjuster"
+            },
+            "widgets_values": [
+                "normal",
+                24,
+                0.5
+            ]
+        },
+        {
+            "id": 35,
+            "type": "LatentSyncNode",
+            "pos": [
+                2756.4873046875,
+                139.73251342773438
+            ],
+            "size": [
+                270,
+                150
+            ],
+            "flags": {},
+            "order": 18,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 51
+                },
+                {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 52
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "links": [
+                        53
+                    ]
+                },
+                {
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                        54
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "ShmuelRonen/ComfyUI-LatentSyncWrapper",
+                "ver": "556b673f82a0a6c38c82344332d33c98d8f30feb",
+                "Node name for S&R": "LatentSyncNode"
+            },
+            "widgets_values": [
+                1247,
+                "randomize",
+                1.5,
+                20
+            ]
+        },
+        {
+            "id": 36,
+            "type": "VHS_VideoCombine",
+            "pos": [
+                2796.311279296875,
+                422.0109558105469
+            ],
+            "size": [
+                214.7587890625,
+                334
+            ],
+            "flags": {},
+            "order": 19,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 53
                 },
                 {
                     "name": "audio",
                     "shape": 7,
                     "type": "AUDIO",
-                    "link": 48
+                    "link": 54
                 },
                 {
                     "name": "meta_batch",
@@ -812,8 +919,7 @@
             "properties": {
                 "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
                 "ver": "a7ce59e381934733bfae03b1be029756d6ce936d",
-                "Node name for S&R": "VHS_VideoCombine",
-                "cnr_id": "comfyui-videohelpersuite"
+                "Node name for S&R": "VHS_VideoCombine"
             },
             "widgets_values": {
                 "frame_rate": 24,
@@ -829,15 +935,7 @@
                 "videopreview": {
                     "hidden": false,
                     "paused": false,
-                    "params": {
-                        "filename": "AnimateDiff_00003-audio.mp4",
-                        "subfolder": "",
-                        "type": "output",
-                        "format": "video/h264-mp4",
-                        "frame_rate": 24,
-                        "workflow": "AnimateDiff_00003.png",
-                        "fullpath": "/comfyui/output/AnimateDiff_00003-audio.mp4"
-                    }
+                    "params": {}
                 }
             }
         }
@@ -1004,18 +1102,50 @@
             "CONDITIONING"
         ],
         [
-            47,
+            49,
             21,
             0,
-            33,
+            34,
             0,
             "IMAGE"
         ],
         [
-            48,
+            50,
             31,
             0,
-            33,
+            34,
+            1,
+            "AUDIO"
+        ],
+        [
+            51,
+            34,
+            0,
+            35,
+            0,
+            "IMAGE"
+        ],
+        [
+            52,
+            34,
+            1,
+            35,
+            1,
+            "AUDIO"
+        ],
+        [
+            53,
+            35,
+            0,
+            36,
+            0,
+            "IMAGE"
+        ],
+        [
+            54,
+            35,
+            1,
+            36,
             1,
             "AUDIO"
         ]
@@ -1040,8 +1170,8 @@
         "ds": {
             "scale": 0.683013455365071,
             "offset": [
-                -1069.259318975988,
-                -149.68831297362476
+                -1096.7843811036737,
+                21.611342345589012
             ]
         },
         "frontendVersion": "1.18.0",
