@@ -37,7 +37,7 @@ workflows:
   - id: 5mqqovn0azs
     name: ltxv_a_api.json
     file: texttovideo/ltxv_a_api.json
-    version: 8
+    version: 9
     description: ''
     inputs:
       - path: 23.inputs.default_value
@@ -69,4 +69,4 @@ normal_workflows:
   - id: vm9k1kd8t7
     name: ltxv_a.json
     file: texttovideo/ltxv_a.json
-    version: 8
+    version: 9
