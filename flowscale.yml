@@ -34,6 +34,15 @@ workflows:
     name: ltxv13b_workflow.json
     description: ''
     file: texttovideo/ltxv13b_workflow.json
+  - id: 4av7xdezjr9
+    name: ltx_video_13b_api.json
+    file: texttovideo/ltx_video_13b_api.json
+    version: 2
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
+    advancedConfig: false
 normal_workflows:
   - id: bxodk8s0jfo
     name: ltxv13b_workflow.json
@@ -42,4 +51,4 @@ normal_workflows:
   - id: fl5fazrfop5
     name: ltx_video_13b.json
     file: texttovideo/ltx_video_13b.json
-    version: 1
+    version: 2
