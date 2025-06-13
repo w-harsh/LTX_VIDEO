@@ -103,17 +103,5 @@
     "pip": [],
     "apt": [],
     "cached": "False"
-  },
-  {
-    "url": "https://github.com/ShmuelRonen/ComfyUI-LatentSyncWrapper",
-    "name": "ComfyUI-LatentSyncWrapper",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {},
-    "nodes": [],
-    "pip": [],
-    "apt": [],
-    "sha": "",
-    "cached": "False"
   }
 ]
