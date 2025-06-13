@@ -63,9 +63,9 @@ normal_workflows:
     file: texttovideo/ltxv13b_workflow.json
     version: 26
   - id: fl5fazrfop5
-    name: ltxv_13b_0.9.7-fp8_i2v_extend_landscape_768x512px.json
-    file: texttovideo/ltxv_13b_0.9.7-fp8_i2v_extend_landscape_768x512px.json
-    version: 0
+    name: ltx_video_13b.json
+    file: texttovideo/ltx_video_13b.json
+    version: 1
   - id: vm9k1kd8t7
     name: ltxv_a.json
     file: texttovideo/ltxv_a.json
