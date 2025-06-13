@@ -2,7 +2,7 @@
     "id": "fcc5c2dc-774a-43c1-b441-956899025913",
     "revision": 0,
     "last_node_id": 33,
-    "last_link_id": 44,
+    "last_link_id": 47,
     "nodes": [
         {
             "id": 10,
@@ -67,7 +67,7 @@
                 213.2843780517578
             ],
             "flags": {},
-            "order": 8,
+            "order": 7,
             "mode": 0,
             "inputs": [
                 {
@@ -180,7 +180,7 @@
                 46
             ],
             "flags": {},
-            "order": 15,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
@@ -222,7 +222,7 @@
                 346
             ],
             "flags": {},
-            "order": 14,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -339,7 +339,7 @@
                 130
             ],
             "flags": {},
-            "order": 11,
+            "order": 9,
             "mode": 0,
             "inputs": [
                 {
@@ -416,7 +416,7 @@
                 26
             ],
             "flags": {},
-            "order": 9,
+            "order": 8,
             "mode": 0,
             "inputs": [
                 {
@@ -454,7 +454,7 @@
                 262
             ],
             "flags": {},
-            "order": 13,
+            "order": 12,
             "mode": 0,
             "inputs": [
                 {
@@ -516,7 +516,7 @@
                 26
             ],
             "flags": {},
-            "order": 16,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
@@ -530,7 +530,7 @@
                     "name": "output",
                     "type": "*",
                     "links": [
-                        42
+                        47
                     ]
                 }
             ],
@@ -554,7 +554,7 @@
                 98
             ],
             "flags": {},
-            "order": 6,
+            "order": 4,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -601,7 +601,7 @@
                 200
             ],
             "flags": {},
-            "order": 4,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -635,7 +635,7 @@
                 318
             ],
             "flags": {},
-            "order": 5,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -670,7 +670,7 @@
                 78
             ],
             "flags": {},
-            "order": 12,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -712,189 +712,30 @@
             ]
         },
         {
-            "id": 30,
-            "type": "VideoLengthAdjuster",
-            "pos": [
-                2160.651611328125,
-                145.69729614257812
-            ],
-            "size": [
-                270,
-                126
-            ],
-            "flags": {},
-            "order": 17,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 42
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "link": 43
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "links": [
-                        35
-                    ]
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "links": [
-                        41
-                    ]
-                }
-            ],
-            "properties": {
-                "aux_id": "ShmuelRonen/ComfyUI-LatentSyncWrapper",
-                "ver": "556b673f82a0a6c38c82344332d33c98d8f30feb",
-                "Node name for S&R": "VideoLengthAdjuster"
-            },
-            "widgets_values": [
-                "normal",
-                24,
-                0.5
-            ]
-        },
-        {
-            "id": 31,
-            "type": "FL_ChatterboxTTS",
-            "pos": [
-                1921.622802734375,
-                455.5909423828125
-            ],
-            "size": [
-                400,
-                228
-            ],
-            "flags": {},
-            "order": 7,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "audio_prompt",
-                    "shape": 7,
-                    "type": "AUDIO",
-                    "link": null
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "links": [
-                        43
-                    ]
-                },
-                {
-                    "name": "message",
-                    "type": "STRING",
-                    "links": null
-                }
-            ],
-            "properties": {
-                "aux_id": "filliptm/ComfyUI_Fill-ChatterBox",
-                "ver": "3e768fa9dc5fd580b81468ddf5cf998b3d253b24",
-                "Node name for S&R": "FL_ChatterboxTTS"
-            },
-            "widgets_values": [
-                "Hello, this is a test.",
-                0.5,
-                0.5,
-                0.8,
-                false,
-                false
-            ],
-            "color": "#16727c",
-            "bgcolor": "#4F0074"
-        },
-        {
-            "id": 32,
-            "type": "LatentSyncNode",
-            "pos": [
-                2578.5771484375,
-                136.0675048828125
-            ],
-            "size": [
-                270,
-                150
-            ],
-            "flags": {},
-            "order": 18,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 35
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "link": 41
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "links": [
-                        40
-                    ]
-                },
-                {
-                    "name": "audio",
-                    "type": "AUDIO",
-                    "links": [
-                        44
-                    ]
-                }
-            ],
-            "properties": {
-                "aux_id": "ShmuelRonen/ComfyUI-LatentSyncWrapper",
-                "ver": "556b673f82a0a6c38c82344332d33c98d8f30feb",
-                "Node name for S&R": "LatentSyncNode"
-            },
-            "widgets_values": [
-                1335,
-                "randomize",
-                1.5,
-                20
-            ]
-        },
-        {
             "id": 33,
             "type": "VHS_VideoCombine",
             "pos": [
-                2664.392822265625,
-                403.0298767089844
+                2233.457763671875,
+                114.73307800292969
             ],
             "size": [
-                214.7587890625,
-                334
+                515.5648193359375,
+                636.1370239257812
             ],
             "flags": {},
-            "order": 19,
+            "order": 16,
             "mode": 0,
             "inputs": [
                 {
                     "name": "images",
                     "type": "IMAGE",
-                    "link": 40
+                    "link": 47
                 },
                 {
                     "name": "audio",
                     "shape": 7,
                     "type": "AUDIO",
-                    "link": 44
+                    "link": null
                 },
                 {
                     "name": "meta_batch",
@@ -1103,52 +944,12 @@
             "CONDITIONING"
         ],
         [
-            35,
-            30,
-            0,
-            32,
-            0,
-            "IMAGE"
-        ],
-        [
-            40,
-            32,
-            0,
-            33,
-            0,
-            "IMAGE"
-        ],
-        [
-            41,
-            30,
-            1,
-            32,
-            1,
-            "AUDIO"
-        ],
-        [
-            42,
+            47,
             21,
             0,
-            30,
+            33,
             0,
             "IMAGE"
-        ],
-        [
-            43,
-            31,
-            0,
-            30,
-            1,
-            "AUDIO"
-        ],
-        [
-            44,
-            32,
-            1,
-            33,
-            1,
-            "AUDIO"
         ]
     ],
     "groups": [
@@ -1169,10 +970,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.7513148009015783,
+            "scale": 0.6830134553650715,
             "offset": [
-                -1228.098506502475,
-                12.42197013023808
+                -865.7945149730638,
+                -54.47221267564537
             ]
         },
         "frontendVersion": "1.18.0",
