@@ -8,9 +8,9 @@ user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
 workflows:
   - id: 8n3z9a40nl
-    name: ltxv13b_workflow_api.json
-    file: texttovideo/ltxv13b_workflow_api.json
-    version: 27
+    name: ltxv_deployed_api.json
+    file: texttovideo/ltxv_deployed_api.json
+    version: 28
     description: ''
     inputs:
       - path: 23.inputs.default_value
@@ -40,9 +40,10 @@ workflows:
     skip_preprocess: true
     advancedConfig: false
   - id: czuw5zpydtc
-    name: ltxv13b_workflow.json
+    name: ltxv_deployed.json
     description: ''
-    file: texttovideo/ltxv13b_workflow.json
+    file: texttovideo/ltxv_deployed.json
+    version: .nan
   - id: 4av7xdezjr9
     name: ltx_video_13b_api.json
     file: texttovideo/ltx_video_13b_api.json
@@ -54,9 +55,9 @@ workflows:
     advancedConfig: false
 normal_workflows:
   - id: bxodk8s0jfo
-    name: ltxv13b_workflow.json
-    file: texttovideo/ltxv13b_workflow.json
-    version: 27
+    name: ltxv_deployed.json
+    file: texttovideo/ltxv_deployed.json
+    version: 28
   - id: fl5fazrfop5
     name: ltx_video_13b.json
     file: texttovideo/ltx_video_13b.json
