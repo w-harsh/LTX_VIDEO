@@ -1,8 +1,8 @@
 {
     "id": "fcc5c2dc-774a-43c1-b441-956899025913",
     "revision": 0,
-    "last_node_id": 33,
-    "last_link_id": 47,
+    "last_node_id": 34,
+    "last_link_id": 48,
     "nodes": [
         {
             "id": 10,
@@ -530,7 +530,7 @@
                     "name": "output",
                     "type": "*",
                     "links": [
-                        47
+                        48
                     ]
                 }
             ],
@@ -601,7 +601,7 @@
                 200
             ],
             "flags": {},
-            "order": 5,
+            "order": 6,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -619,7 +619,7 @@
                 "Node name for S&R": "FSLoadText"
             },
             "widgets_values": [
-                "close up on the rabbit as it is speaking ",
+                "",
                 "Input Text"
             ]
         },
@@ -635,7 +635,7 @@
                 318
             ],
             "flags": {},
-            "order": 6,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -712,15 +712,15 @@
             ]
         },
         {
-            "id": 33,
-            "type": "VHS_VideoCombine",
+            "id": 34,
+            "type": "FSSaveVideo",
             "pos": [
-                2233.457763671875,
-                114.73307800292969
+                2190.671630859375,
+                117.67604064941406
             ],
             "size": [
-                515.5648193359375,
-                636.1370239257812
+                271.3863220214844,
+                130
             ],
             "flags": {},
             "order": 16,
@@ -729,57 +729,27 @@
                 {
                     "name": "images",
                     "type": "IMAGE",
-                    "link": 47
-                },
-                {
-                    "name": "audio",
-                    "shape": 7,
-                    "type": "AUDIO",
-                    "link": null
-                },
-                {
-                    "name": "meta_batch",
-                    "shape": 7,
-                    "type": "VHS_BatchManager",
-                    "link": null
-                },
-                {
-                    "name": "vae",
-                    "shape": 7,
-                    "type": "VAE",
-                    "link": null
+                    "link": 48
                 }
             ],
             "outputs": [
                 {
-                    "name": "Filenames",
-                    "type": "VHS_FILENAMES",
+                    "name": "video_path",
+                    "type": "STRING",
                     "links": null
                 }
             ],
             "properties": {
-                "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
-                "ver": "a7ce59e381934733bfae03b1be029756d6ce936d",
-                "Node name for S&R": "VHS_VideoCombine",
-                "cnr_id": "comfyui-videohelpersuite"
+                "aux_id": "FlowScale-AI/flowscale-nodes",
+                "ver": "7f7542c2981432a63526f4fac28902653cb60e9c",
+                "Node name for S&R": "FSSaveVideo"
             },
-            "widgets_values": {
-                "frame_rate": 24,
-                "loop_count": 0,
-                "filename_prefix": "AnimateDiff",
-                "format": "video/h264-mp4",
-                "pix_fmt": "yuv420p",
-                "crf": 19,
-                "save_metadata": true,
-                "trim_to_audio": false,
-                "pingpong": false,
-                "save_output": true,
-                "videopreview": {
-                    "hidden": false,
-                    "paused": false,
-                    "params": {}
-                }
-            }
+            "widgets_values": [
+                "FlowScale",
+                24,
+                95,
+                "Output Video"
+            ]
         }
     ],
     "links": [
@@ -944,10 +914,10 @@
             "CONDITIONING"
         ],
         [
-            47,
+            48,
             21,
             0,
-            33,
+            34,
             0,
             "IMAGE"
         ]
@@ -970,10 +940,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.6830134553650715,
+            "scale": 0.6209213230591559,
             "offset": [
-                -865.7945149730638,
-                -54.47221267564537
+                317.21472255198336,
+                -108.01296689467594
             ]
         },
         "frontendVersion": "1.18.0",
