@@ -1,7 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": "medium close-up of a fluffy white baby bunny with oversized expressive eyes, sitting in a lush meadow surrounded by softly swaying pastel wildflowers, vibrant green grass illuminated by warm golden sunlight, gentle breeze rippling through the scene, background filled with dreamy blurred trees and puffy white clouds in a clear blue sky, soft focus highlights and rim light accentuating the fur texture, cheerful and innocent mood, highly detailed fur with smooth shading and subtle shadowing under the bunny, stylized realism with Pixar-like charm, slow circular camera orbit around the bunny to enhance the whimsical and joyful atmosphere",
+            "text": "A frozen port facility nestled against towering snow-covered mountains, with icy waters gently lapping at the edges. The cranes and wrecked ships sway slightly in a cold breeze, while snowflakes drift slowly through the air. The modern buildings and shipping containers remain intact, with faint steam rising from the structures, and the large roofed area reflects a soft glow from within. The camera slowly pans across the scene from an aerial view, capturing the subtle movement of the ice and the distant shimmer of the mountain peaks under a cloudy sky.",
             "clip": [
                 "38",
                 0
@@ -14,7 +14,7 @@
     },
     "7": {
         "inputs": {
-            "text": "low quality, worst quality, deformed, distorted, disfigured, motion smear, motion artifacts, fused fingers, bad anatomy, weird hand, ugly",
+            "text": "Blurry, jittery, distorted, inconsistent motion, unnatural lighting, flickering, altered structures, low resolution",
             "clip": [
                 "38",
                 0
@@ -47,7 +47,7 @@
     },
     "1206": {
         "inputs": {
-            "image": "768x512px bunny.png"
+            "image": "EkOc8gqWoAYeXOz (1).jpg"
         },
         "class_type": "LoadImage",
         "_meta": {
