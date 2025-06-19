@@ -42,7 +42,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "medium close-up of a fluffy white baby bunny with oversized expressive eyes, sitting in a lush meadow surrounded by softly swaying pastel wildflowers, vibrant green grass illuminated by warm golden sunlight, gentle breeze rippling through the scene, background filled with dreamy blurred trees and puffy white clouds in a clear blue sky, soft focus highlights and rim light accentuating the fur texture, cheerful and innocent mood, highly detailed fur with smooth shading and subtle shadowing under the bunny, stylized realism with Pixar-like charm, slow circular camera orbit around the bunny to enhance the whimsical and joyful atmosphere"
+                "A frozen port facility nestled against towering snow-covered mountains, with icy waters gently lapping at the edges. The cranes and wrecked ships sway slightly in a cold breeze, while snowflakes drift slowly through the air. The modern buildings and shipping containers remain intact, with faint steam rising from the structures, and the large roofed area reflects a soft glow from within. The camera slowly pans across the scene from an aerial view, capturing the subtle movement of the ice and the distant shimmer of the mountain peaks under a cloudy sky."
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -85,7 +85,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "low quality, worst quality, deformed, distorted, disfigured, motion smear, motion artifacts, fused fingers, bad anatomy, weird hand, ugly"
+                "Blurry, jittery, distorted, inconsistent motion, unnatural lighting, flickering, altered structures, low resolution"
             ],
             "color": "#322",
             "bgcolor": "#533"
@@ -172,7 +172,7 @@
                 326
             ],
             "flags": {},
-            "order": 3,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -195,7 +195,7 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "768x512px bunny.png",
+                "EkOc8gqWoAYeXOz (1).jpg",
                 "image"
             ],
             "color": "#232",
@@ -466,7 +466,7 @@
                 82
             ],
             "flags": {},
-            "order": 4,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -546,7 +546,7 @@
                 88
             ],
             "flags": {},
-            "order": 2,
+            "order": 3,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -718,7 +718,7 @@
                 98
             ],
             "flags": {},
-            "order": 5,
+            "order": 4,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -936,8 +936,8 @@
         "ds": {
             "scale": 0.6209213230591555,
             "offset": [
-                171.40386452795866,
-                -1758.4704594054417
+                -10.744885280451843,
+                -1804.5310106940558
             ]
         },
         "frontendVersion": "1.18.0",
