@@ -47,7 +47,7 @@ workflows:
   - id: 4av7xdezjr9
     name: ltx_video_13b_api.json
     file: ltxv_workflow/ltx_video_13b_api.json
-    version: 3
+    version: 4
     description: ''
     inputs: []
     outputs: []
@@ -61,4 +61,4 @@ normal_workflows:
   - id: 4av7xdezjr9
     name: ltx_video_13b.json
     file: ltxv_workflow/ltx_video_13b.json
-    version: 3
+    version: 4
