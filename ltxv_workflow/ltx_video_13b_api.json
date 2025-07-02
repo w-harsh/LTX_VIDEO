@@ -1,7 +1,7 @@
 {
     "6": {
         "inputs": {
-            "text": "A frozen port facility nestled against towering snow-covered mountains, with icy waters gently lapping at the edges. The cranes and wrecked ships sway slightly in a cold breeze, while snowflakes drift slowly through the air. The modern buildings and shipping containers remain intact, with faint steam rising from the structures, and the large roofed area reflects a soft glow from within. The camera slowly pans across the scene from an aerial view, capturing the subtle movement of the ice and the distant shimmer of the mountain peaks under a cloudy sky.",
+            "text": "A majestic ethereal landscape featuring grand marble temples with golden domes, nestled among lush greenery and cascading waterfalls. The composition includes a sweeping aerial view over a serene lake surrounded by misty mountains, with fluffy clouds drifting across a vibrant blue sky. Incorporate subtle animations: flowing water, swaying trees, and a soft breeze rustling the foliage, enhancing the tranquil yet majestic atmosphere. Use a high-resolution style with detailed textures and soft lighting for a realistic yet dreamy effect.",
             "clip": [
                 "38",
                 0
@@ -47,7 +47,7 @@
     },
     "1206": {
         "inputs": {
-            "image": "EkOc8gqWoAYeXOz (1).jpg"
+            "image": "Screenshot 2025-07-02 123102.png"
         },
         "class_type": "LoadImage",
         "_meta": {
@@ -239,7 +239,7 @@
     },
     "1910": {
         "inputs": {
-            "ckpt_name": "AOM3A1.safetensors"
+            "ckpt_name": "ltxv-13b-0.9.7-distilled.safetensors"
         },
         "class_type": "CheckpointLoaderSimple",
         "_meta": {
