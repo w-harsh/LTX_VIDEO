@@ -16,7 +16,7 @@
                 204.2556610107422
             ],
             "flags": {},
-            "order": 8,
+            "order": 6,
             "mode": 0,
             "inputs": [
                 {
@@ -42,7 +42,7 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "A frozen port facility nestled against towering snow-covered mountains, with icy waters gently lapping at the edges. The cranes and wrecked ships sway slightly in a cold breeze, while snowflakes drift slowly through the air. The modern buildings and shipping containers remain intact, with faint steam rising from the structures, and the large roofed area reflects a soft glow from within. The camera slowly pans across the scene from an aerial view, capturing the subtle movement of the ice and the distant shimmer of the mountain peaks under a cloudy sky."
+                "A majestic ethereal landscape featuring grand marble temples with golden domes, nestled among lush greenery and cascading waterfalls. The composition includes a sweeping aerial view over a serene lake surrounded by misty mountains, with fluffy clouds drifting across a vibrant blue sky. Incorporate subtle animations: flowing water, swaying trees, and a soft breeze rustling the foliage, enhancing the tranquil yet majestic atmosphere. Use a high-resolution style with detailed textures and soft lighting for a realistic yet dreamy effect."
             ],
             "color": "#232",
             "bgcolor": "#353"
@@ -51,15 +51,15 @@
             "id": 7,
             "type": "CLIPTextEncode",
             "pos": [
-                460,
-                2170
+                492.55999755859375,
+                2173.519775390625
             ],
             "size": [
                 317.832275390625,
                 213.2843780517578
             ],
             "flags": {},
-            "order": 9,
+            "order": 7,
             "mode": 0,
             "inputs": [
                 {
@@ -102,7 +102,7 @@
                 106
             ],
             "flags": {},
-            "order": 5,
+            "order": 0,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -139,7 +139,7 @@
                 58.7332878112793
             ],
             "flags": {},
-            "order": 0,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -172,7 +172,7 @@
                 326
             ],
             "flags": {},
-            "order": 1,
+            "order": 4,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -195,7 +195,7 @@
                 "Node name for S&R": "LoadImage"
             },
             "widgets_values": [
-                "EkOc8gqWoAYeXOz (1).jpg",
+                "Screenshot 2025-07-02 123102.png",
                 "image"
             ],
             "color": "#232",
@@ -503,7 +503,7 @@
                 130
             ],
             "flags": {},
-            "order": 7,
+            "order": 9,
             "mode": 0,
             "inputs": [
                 {
@@ -580,7 +580,7 @@
                 26
             ],
             "flags": {},
-            "order": 6,
+            "order": 8,
             "mode": 0,
             "inputs": [
                 {
@@ -718,7 +718,7 @@
                 98
             ],
             "flags": {},
-            "order": 4,
+            "order": 5,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -750,7 +750,7 @@
                 "Node name for S&R": "CheckpointLoaderSimple"
             },
             "widgets_values": [
-                "AOM3A1.safetensors"
+                "ltxv-13b-0.9.7-distilled.safetensors"
             ]
         }
     ],
@@ -934,10 +934,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.6209213230591555,
+            "scale": 0.9090909090909098,
             "offset": [
-                71.7131480813646,
-                -1883.7680486303047
+                117.17000822296592,
+                -1856.1208619164386
             ]
         },
         "frontendVersion": "1.18.0",
